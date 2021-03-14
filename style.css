@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+}
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        color: white;
+        background-color: rgb(32, 32, 32);
+        padding: 1.5vh 7vw;
+        min-height: 10vh;
+        border-bottom: 0.3vh solid rgb(98, 197, 255);
+        position: fixed;
+        z-index: 100;
+        }
+
+  
+.nav-links{
+    display: none;
+}
+.cursor{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 1000;
+    backdrop-filter: grayscale;
+    
+}
+
+.link-grow{
+    transform: scale(2.5);
+    background-color: rgba(255, 255, 255, 0.116);
+    border: 0.2vh solid rgb(98, 197, 255);
+}
+
+.hovered-link{
+    color: white;
+}
+
+
+.Slider{
+    padding-top: 15vh;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(32, 32, 32);
+    z-index: -4;
+
+}
+
+section{
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 7vw;
+    margin: auto;
+    background-attachment: fixed;
+    object-fit: cover;
+    color: black;
+    border-bottom: 0.3vh solid rgb(98, 197, 255);
+}
+
+.IntroSection{
+    padding-top: 12vh;
+    height: auto;
+}
+.UIDesign{
+    background-color: rgb(32, 32, 32);
+    color: white;
+
+}
+
+.SocialMediaWork{
+    background-color: rgb(32, 32, 32);
+    color: white;
+
+}
+
+.Other{
+ 
+}
+
+.Websites{
+  
+   
+}
+
+.Box{
+    width: 100%;
+    height: auto;
+    color: white;
+  
+}
+
+.Welcome{
+    width: 90%;
+    font-size: 1.6rem;
+    padding-left: 5%;
+    color: white;
+    z-index: 2;
+    color: white
+}
+
+
+.Welcome span{
+    color:rgb(98, 197, 255)
+}
+
+.Intro_Text{
+    width: 90%;
+    font-size: 2.5vw;
+    padding-left: 5%;
+    color: white;
+    z-index: 2;
+    color: white
+}
+.WelcomeLinks{
+    opacity: 0.9;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+
+
+}
+
+.WelcomeLinks a{
+    color: rgb(98, 197, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.WelcomeLinks a:hover{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+#Title{
+    font-size: 1.8rem;
+}
+
+
+.Hamburger {
+    position: relative;
+    z-index: 10;
+    top: 0%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding-left: 40vw;
+  }
+
+
+
+
+  
+  
+  .MobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(29, 29, 29);
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+    transition: 1s;
+    opacity: 0.9;
+    z-index: 9;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+  }
+  
+  li {
+    padding: 1rem 1rem;
+  }
+  
+  .MobileMenuLink {
+    display: inline;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .MobileMenuLink:hover {
+    color:  rgb(98, 197, 255);
+    transition: 0.3s;
+  }
+  
+  
+  
+    
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+     
+    }
+
+  
+    
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+
+    .front-cover img{
+        position: relative;
+        z-index: -3;
+        width: 50%;
+    }
+    
+      
+footer{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    padding: 1.5vh 7vw;
+    min-height: 10vh;
+    border-top: 0.3vh solid rgb(98, 197, 255);
+}
+
+
+
+  
+@media screen and (min-width: 650px) {
+
+        .MobileMenu, .Hamburger{
+            display: none;
+        }
+        .nav-links{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            color: white
+        }
+        
+        .nav-links:hover{
+            color: red
+        }
+        
+        #Title{
+            font-size: 2rem;
+        }
+        
+        .nav-links li{
+            padding: 0vh 3vw;
+            font-size: 1rem;
+        
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: white;
+            cursor: none;
+        }
+ 
+        
+
+        .nav-links a:hover{
+            color:  rgb(98, 197, 255);
+            transition: 0.3s;
+            cursor: none;
+        }
+        
+        .Welcome{
+            font-size: 3.8vw;
+            width:70%;
+        }
+        
+        .Intro_Text{
+         font-size: 1.8vw;
+         width: 80%
+        }
+
+.WelcomeLinks{
+    padding-top: 0vh;
+}
+.WelcomeLinks a{
+    font-size: 1.3rem;
+
+}
+        
+
+h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  
+  h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  p{
+    font-size: 1.1rem;
+    padding-bottom: 2%;
+  }
+  
+}
+
+
+
+  @media screen and (min-width: 1200px) {
+
+    .Welcome{
+        font-size: 3vw;
+        width: 60%;
+    }
+    
+    .Intro_Text{
+     font-size: 1.5vw;
+     width: 100%;
+    }
+
+
+    .nav-links li{
+        padding: 0vh 3vw;
+        font-size: 1.5rem;
+    
+    }
+
+    #Title{
+        font-size: 2.5rem;
+    }
+
+    h1{
+        font-size: 2.2em;
+        font-weight: 600;
+      }
+      
+      h2{
+        font-size: 1.7em;
+        font-weight: 600;
+      }
+      
+      p{
+        font-size: 1.2em;
+      }
+
+      .Box{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .WelcomeLinks a{
+        font-size: 1.5rem;
+    
+    }
+    .WelcomeLinks{
+        padding-left: 15%;;
+        padding-bottom: 5%;
+    }
+            
+  }
