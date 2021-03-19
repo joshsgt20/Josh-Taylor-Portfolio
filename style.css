@@ -5,6 +5,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 h1{
     font-size: 1.6rem;
 }
@@ -17,6 +21,9 @@ p{
     font-size: 1rem;
 }
 
+a{
+    text-decoration: none;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -69,106 +76,18 @@ body{
 }
 
 
-.Slider{
-    padding-top: 15vh;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: rgb(32, 32, 32);
-    z-index: -4;
-
-}
-
 section{
     min-height: 60vh;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 5vh 7vw;
+    padding: 4vh 8vw;
     margin: auto;
     background-attachment: fixed;
     object-fit: cover;
     color: black;
     border-bottom: 0.3vh solid rgb(98, 197, 255);
 }
-
-.IntroSection{
-    padding-top: 12vh;
-    height: auto;
-}
-.UIDesign{
-    background-color: rgb(32, 32, 32);
-    color: white;
-
-}
-
-.SocialMediaWork{
-    background-color: rgb(32, 32, 32);
-    color: white;
-
-}
-
-.Other{
- 
-}
-
-.Websites{
-  
-   
-}
-
-.Box{
-    width: 100%;
-    height: auto;
-    color: white;
-  
-}
-
-.Welcome{
-    width: 90%;
-    font-size: 1.6rem;
-    padding-left: 5%;
-    color: white;
-    z-index: 2;
-    color: white
-}
-
-
-.Welcome span{
-    color:rgb(98, 197, 255)
-}
-
-.Intro_Text{
-    width: 90%;
-    font-size: 2.5vw;
-    padding-left: 5%;
-    color: white;
-    z-index: 2;
-    color: white
-}
-.WelcomeLinks{
-    opacity: 0.9;
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 5vh;
-
-
-}
-
-.WelcomeLinks a{
-    color: rgb(98, 197, 255);
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.WelcomeLinks a:hover{
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
 
 #Title{
     font-size: 1.8rem;
@@ -182,13 +101,9 @@ section{
     display: flex;
     margin: auto;
     align-items: center;
-    padding-left: 40vw;
+    left: 20%
   }
 
-
-
-
-  
   
   .MobileMenu {
     position: fixed;
@@ -205,7 +120,7 @@ section{
     list-style: none;
     padding-top: 4rem;
     transition: 1s;
-    opacity: 0.9;
+    opacity: 0.95;
     z-index: 9;
   }
   
@@ -222,6 +137,7 @@ section{
     font-size: 2rem;
     color: white;
     text-decoration: none;
+    padding-left: 5vw;
   }
   
   .MobileMenuLink:hover {
@@ -229,9 +145,6 @@ section{
     transition: 0.3s;
   }
   
-  
-  
-    
     .bar1, .bar2, .bar3 {
       width: 35px;
     height: 5px;
@@ -241,8 +154,6 @@ section{
      
     }
 
-  
-    
     .change .bar1 {
       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
       transform: rotate(-45deg) translate(-9px, 6px);
@@ -254,15 +165,7 @@ section{
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
       transform: rotate(45deg) translate(-8px, -8px);
     }
-
-
-    .front-cover img{
-        position: relative;
-        z-index: -3;
-        width: 50%;
-    }
-    
-      
+ 
 footer{
     width: 100%;
     margin: auto;
@@ -275,10 +178,162 @@ footer{
 }
 
 
+/* Home Page CSS */ 
+
+
+
+.Welcome{
+    font-size: 1.6rem;
+    color: white;
+    z-index: 2;
+    color: white
+}
+
+
+.Welcome span{
+    color:rgb(98, 197, 255)
+}
+
+.Intro_Text{
+    color: white;
+    z-index: 2;
+}
+.Intro_Text p{
+    font-size: 1rem;
+   }
+.WelcomeLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.WelcomeLinks a{
+    color: rgb(98, 197, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.WelcomeLinks a:hover{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.SocialMedia{
+    width: 90%;
+}
+
+.SocialMedia .fa {
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 5%;
+    background: transparent;
+    color: white;
+    padding: 1vw;
+    justify-content: center;
+    border: 0.3vh solid rgb(98, 197, 255);
+  }
+  
+  .fa:hover {
+      background-color: rgb(98, 197, 255);
+      transition: 0.3s
+  }
+  
+  .fa-twitter,  .fa-linkedin,   .fa-instagram{
+    background: transparent;
+    color: white;
+    padding: 1vw;
+    justify-content: center;
+    border: 0.3vh solid rgb(98, 197, 255);
+  }
+
+
+.Slider{
+    padding: 13vh 5vw;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(32, 32, 32);
+    z-index: -4;
+}
+
+.AboutMe{
+    margin: auto;
+    display: inline;
+}
+
+.AboutMe img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.Interests img{
+    width: 90%;
+}
+
+ul li{
+    padding: 0;;
+}
+
+/* My Work Page CSS */ 
+
+
+.IntroSection{
+    padding-top: 12vh;
+    height: auto;
+}
+
+.UIDesign{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "UITitle UITitle UITitle UITitle UITitle"
+    "UIText UIText UIText UIText UIText"
+    "MoodsText  MoodsText MoodsText MoodsImage MoodsImage"
+    "LinksImage LinksImage LinksText LinksText LinksText";
+}
+
+.UIDesign a:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.UIDesign h2{
+    padding: 5vh 0vw 2vh 0vw;
+}
+.UIDesign img{
+    width: 80%;
+}
+
+.LinksImage{
+    margin-right: 20%;
+}
+
+.MoodsImage{
+    margin-left: 20%;;
+}
+
+.SocialMediaWork{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.Other{
+ 
+}
+
+.Websites{
+  
+}
 
   
 @media screen and (min-width: 650px) {
 
+    section{
+        padding: 6vh 10vw;
+    }
         .MobileMenu, .Hamburger{
             display: none;
         }
@@ -286,11 +341,11 @@ footer{
             display: flex;
             justify-content: center;
             list-style: none;
-            color: white
+            color: white;
         }
         
         .nav-links:hover{
-            color: red
+            color: rgb(98, 197, 255)
         }
         
         #Title{
@@ -308,8 +363,6 @@ footer{
             cursor: none;
         }
  
-        
-
         .nav-links a:hover{
             color:  rgb(98, 197, 255);
             transition: 0.3s;
@@ -317,20 +370,18 @@ footer{
         }
         
         .Welcome{
-            font-size: 3.8vw;
-            width:70%;
+            font-size: 2rem;
         }
         
-        .Intro_Text{
-         font-size: 1.8vw;
-         width: 80%
+        .Intro_Text p{
+         font-size: 1.4rem;
         }
 
 .WelcomeLinks{
     padding-top: 0vh;
 }
 .WelcomeLinks a{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 
 }
         
@@ -350,25 +401,131 @@ h1{
     padding-bottom: 2%;
   }
   
+
+
+/* Home Page CSS */ 
+
+.AboutMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Text Picture"
+    "Text2 Text2"
+ 
+
+}
+
+.AboutMe img{
+    margin-left: 2.5%;
+    width: 95%;
+}
+
+
+.Interests{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "InterestsText InterestsZeus"
+    "InterestsTravel InterestsCoffee"
+}
+
+
+.Skills ul{
+    columns: 2;
 }
 
 
 
-  @media screen and (min-width: 1200px) {
+/* My Work Page CSS */ 
+
+/* Contact Page CSS */ 
+
+/* Blog Page CSS */ 
+
+
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    /* Home Page CSS */ 
+    .AboutMe{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "Text Picture"
+        "Text2 Picture"
+    
+    }
+
+    .Slider{
+        display: grid;
+        padding: 10vh 7vw;
+        align-items: center;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "WelcomeText Links"
+        "IntroText SocialMediaIcons"
+    }
+
+    nav{
+        padding: 0vh 7vw;
+  
+        }
+
+    .Intro_Text p, .WelcomeLinks a{
+        font-size: 1.5rem;
+       }
 
     .Welcome{
-        font-size: 3vw;
-        width: 60%;
+    font-size: 2.5rem;
+    padding: 2vh 0vw;
+    }
+
+    .WelcomeLinks{
+        height: 60%;
+        margin-left: 5vw;
+    }
+
+    .SocialMedia{
+        margin-left: 5vw;
+    }
+
+
+    .SocialMedia .fa {
+        font-size: 3.5rem;
     }
     
-    .Intro_Text{
-     font-size: 1.5vw;
-     width: 100%;
+/* My Work Page CSS */ 
+
+/* Contact Page CSS */ 
+
+/* Blog Page CSS */ 
+
+}
+
+
+  @media screen and (min-width: 1400px) {
+section{
+    padding: 8vh 15vw;
+}
+
+.Slider{
+    padding: 10vh 10vw;
+}
+
+nav{
+    padding: 0vh 10vw;
+
+    }
+    .Welcome{
+        font-size: 3.5rem;
+        padding: 2vh 0vw
+    }
+    
+    .Intro_Text p, .WelcomeLinks a{
+     font-size: 2rem;
     }
 
 
     .nav-links li{
-        padding: 0vh 3vw;
         font-size: 1.5rem;
     
     }
@@ -383,28 +540,28 @@ h1{
       }
       
       h2{
-        font-size: 1.7em;
+        font-size: 1.9em;
         font-weight: 600;
       }
       
       p{
-        font-size: 1.2em;
+        font-size: 1.4em;
       }
 
-      .Box{
-        width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-    }
 
-    .WelcomeLinks a{
-        font-size: 1.5rem;
-    
-    }
     .WelcomeLinks{
-        padding-left: 15%;;
-        padding-bottom: 5%;
+        height: 50%;
+        font-size: 1.5vw;
     }
-            
-  }
+    
+
+/* Home Page CSS */ 
+
+/* My Work Page CSS */ 
+
+/* Contact Page CSS */ 
+
+/* Blog Page CSS */ 
+
+
+}

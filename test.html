@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <div class="ProjectDiv">
+  <div class="Projects">
+    <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
+    <div class="overlay">
+      <div class="ProjectText"><p>I hate my life</p>
+      <button>Kill me</button></div>
+    </div>
+  </div>
+
+
+
+  <style>
+
+    .ProjectDiv{
+      display: flex;
+      width: 90%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    
+    }
+    .Projects {
+  position: relative;
+  width: 40%;
+  margin: 1vw;
+
+}
+
+.ProjectImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border: ;
+}
+
+.Projects:hover .overlay {
+  height: 50%;
+}
+
+.ProjectText {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  </style>
+</body>
+</html>
