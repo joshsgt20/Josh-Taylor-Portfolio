@@ -1,568 +1,716 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-
-h1{
-    font-size: 1.6rem;
+  scroll-behavior: smooth;
 }
 
-h2{
-    font-size: 1.3rem;
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.3rem;
 }
 
 p{
-    font-size: 1rem;
+  font-size: 1rem;
+
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    cursor: none;
+body {
+  font-family: "Poppins", sans-serif;
+  cursor: none;
 }
 
-    nav{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin: auto;
-        align-items: center;
-        color: white;
-        background-color: rgb(32, 32, 32);
-        padding: 1.5vh 7vw;
-        min-height: 10vh;
-        border-bottom: 0.3vh solid rgb(98, 197, 255);
-        position: fixed;
-        z-index: 100;
-        }
-
-  
-.nav-links{
-    display: none;
-}
-.cursor{
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid black;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.3s ease;
-    transition-property: background, transform;
-    transform-origin: 100% 100%;
-    z-index: 1000;
-    backdrop-filter: grayscale;
-    
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  color: white;
+  background-color: rgb(32, 32, 32);
+  padding: 1.5vh 7vw;
+  min-height: 10vh;
+  border-bottom: 0.3vh solid rgb(53, 179, 252);
+  position: fixed;
+  z-index: 100;
 }
 
-.link-grow{
-    transform: scale(2.5);
-    background-color: rgba(255, 255, 255, 0.116);
-    border: 0.2vh solid rgb(98, 197, 255);
+.nav-links {
+  display: none;
+}
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 1000;
+  backdrop-filter: grayscale;
 }
 
-.hovered-link{
-    color: white;
+.link-grow {
+  transform: scale(2.5);
+  background-color: rgba(255, 255, 255, 0.116);
+  border: 0.2vh solid rgb(53, 179, 252);
 }
 
-
-section{
-    min-height: 60vh;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 4vh 8vw;
-    margin: auto;
-    background-attachment: fixed;
-    object-fit: cover;
-    color: black;
-    border-bottom: 0.3vh solid rgb(98, 197, 255);
+.hovered-link {
+  color: white;
 }
 
-#Title{
-    font-size: 1.8rem;
+section {
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4vh 8vw;
+  margin: auto;
+  background-attachment: fixed;
+  object-fit: cover;
+  color: black;
+  border-bottom: 0.3vh solid rgb(53, 179, 252);
 }
 
+#Title {
+  font-size: 1.8rem;
+}
 
 .Hamburger {
-    position: relative;
-    z-index: 10;
-    top: 0%;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    left: 20%
-  }
-
-  
-  .MobileMenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgb(29, 29, 29);
-    color: white;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    list-style: none;
-    padding-top: 4rem;
-    transition: 1s;
-    opacity: 0.95;
-    z-index: 9;
-  }
-  
-  .showMenu {
-    transform: translateY(0);
-  }
-  
-  li {
-    padding: 1rem 1rem;
-  }
-  
-  .MobileMenuLink {
-    display: inline;
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-    padding-left: 5vw;
-  }
-  
-  .MobileMenuLink:hover {
-    color:  rgb(98, 197, 255);
-    transition: 0.3s;
-  }
-  
-    .bar1, .bar2, .bar3 {
-      width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-     
-    }
-
-    .change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
-    }
-    
-    .change .bar2 {opacity: 0;}
-    
-    .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
-    }
- 
-footer{
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    color: white;
-    background-color: rgb(32, 32, 32);
-    padding: 1.5vh 7vw;
-    min-height: 10vh;
-    border-top: 0.3vh solid rgb(98, 197, 255);
+  position: relative;
+  z-index: 10;
+  top: 0%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  left: 20%;
 }
 
-
-/* Home Page CSS */ 
-
-
-
-.Welcome{
-    font-size: 1.6rem;
-    color: white;
-    z-index: 2;
-    color: white
+.MobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(29, 29, 29);
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  list-style: none;
+  padding-top: 4rem;
+  transition: 1s;
+  opacity: 0.95;
+  z-index: 9;
 }
 
-
-.Welcome span{
-    color:rgb(98, 197, 255)
+.MobileMenu .fa{
+  margin-left: 5vw;
+  font-size: 3rem;
 }
 
-.Intro_Text{
-    color: white;
-    z-index: 2;
-}
-.Intro_Text p{
-    font-size: 1rem;
-   }
-.WelcomeLinks{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.showMenu {
+  transform: translateY(0);
 }
 
-.WelcomeLinks a{
-    color: rgb(98, 197, 255);
-    text-decoration: none;
-    font-size: 1rem;
+li {
+  padding: 1rem 1rem;
 }
 
-.WelcomeLinks a:hover{
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+.MobileMenuLink {
+  display: inline;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  margin-left: 5vw;
 }
 
-.SocialMedia{
-    width: 90%;
+.MobileMenuLink:hover {
+  color: rgb(53, 179, 252);
+  transition: 0.3s;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  color: white;
+  background-color: rgb(32, 32, 32);
+  padding: 1.5vh 7vw;
+  min-height: 10vh;
+  border-top: 0.3vh solid rgb(53, 179, 252);
+}
+
+/* Home Page CSS */
+
+.Welcome {
+  font-size: 1.6rem;
+  color: white;
+  z-index: 2;
+  color: white;
+}
+
+.Welcome span {
+  color: rgb(53, 179, 252);
+}
+
+.Intro_Text {
+  color: white;
+  z-index: 2;
+}
+.Intro_Text p {
+  font-size: 1rem;
+}
+.WelcomeLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.WelcomeLinks a {
+  color: rgb(53, 179, 252);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.WelcomeLinks a:hover {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.SocialMedia {
+  width: 90%;
 }
 
 .SocialMedia .fa {
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 5%;
-    background: transparent;
-    color: white;
-    padding: 1vw;
-    justify-content: center;
-    border: 0.3vh solid rgb(98, 197, 255);
-  }
-  
-  .fa:hover {
-      background-color: rgb(98, 197, 255);
-      transition: 0.3s
-  }
-  
-  .fa-twitter,  .fa-linkedin,   .fa-instagram{
-    background: transparent;
-    color: white;
-    padding: 1vw;
-    justify-content: center;
-    border: 0.3vh solid rgb(98, 197, 255);
-  }
-
-
-.Slider{
-    padding: 13vh 5vw;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: rgb(32, 32, 32);
-    z-index: -4;
-    border-bottom: 0.3vh solid rgb(98, 197, 255);
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 5%;
+  background: transparent;
+  color: white;
+  padding: 1vw;
+  justify-content: center;
+  border: 0.3vh solid rgb(53, 179, 252);
 }
 
-.AboutMe{
-    margin: auto;
-    display: inline;
+.fa:hover {
+  background-color: rgb(53, 179, 252);
+  transition: 0.3s;
 }
 
-.AboutMe img{
+.fa-twitter,
+.fa-linkedin,
+.fa-instagram {
+  background: transparent;
+  color: white;
+  padding: 1vw;
+  justify-content: center;
+  border: 0.3vh solid rgb(53, 179, 252);
+}
+
+.Slider {
+  padding: 13vh 5vw;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(32, 32, 32);
+  z-index: -4;
+  border-bottom: 0.3vh solid rgb(53, 179, 252);
+}
+
+.AboutMe {
+  margin: auto;
+  display: inline;
+}
+
+.AboutMe img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.Interests img {
+  width: 80%;
+  margin: 2vh 10%;
+}
+
+ul li {
+  padding: 0;
+}
+
+/* My Work Page CSS */
+
+.IntroSection {
+  padding-top: 12vh;
+  height: auto;
+}
+
+.UIDesign {
+  background-color: rgb(32, 32, 32);
+  color: white;
+
+}
+
+.UIDesign a:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.UIDesign h2 {
+  padding: 5vh 0vw 2vh 0vw;
+}
+.UIDesign img {
+  width: 80%;
+}
+
+.LinksImage, .MoodsImage{
+  margin-left: 10%;
+  padding-top: 5vh;
+}
+
+
+
+.SocialMediaWork {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+.Other {
+}
+
+.Websites {
+}
+
+.ProjectDiv {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Projects {
+  position: relative;
+  width: 80%;
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  margin: 2vh 0vw;
+  border-radius: 50%;
+  border: 0.1vh solid rgb(32, 32, 32);
+  align-items: center;
+}
+
+.Projects button{
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border: 0.3vh solid rgb(53, 179, 252);
+    padding: 0.5vh 1vw;
     width: 80%;
-    margin-left: 10%;
+    margin-bottom: 1vh;
+
 }
 
-.Interests img{
-    width: 90%;
+.Projects button:hover{
+    background-color: rgb(53, 179, 252);
+    transition: 0.2s;
+    cursor: none;
+}
+.Projects h2 {
+  padding: 1vh 0vw;
 }
 
-ul li{
-    padding: 0;;
+.ProjectImage {
+  display: block;
+  width: 98%;
+  height: auto;
+  margin: 1% 1%;
 }
 
-/* My Work Page CSS */ 
-
-
-.IntroSection{
-    padding-top: 12vh;
-    height: auto;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(32, 32, 32);
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  transition: 0.5s ease;
+  margin: 0;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.UIDesign{
+.Projects:hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+.ProjectText {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  height: 70%
+}
+
+
+.UIDesign button{
+  color: white;
+  background-color: rgb(32, 32, 32);
+  border: 0.3vh solid rgb(53, 179, 252);
+  padding: 0.5vh 1vw;
+  width: 100%;
+  margin: 2vh 0vw;
+
+ 
+
+}
+
+.Websites button{
+  color: white;
+  background-color: rgb(32, 32, 32);
+  border: 0.3vh solid rgb(32, 32, 32);
+  padding: 0.5vh 1vw;
+  width: 100%;
+  margin: 2vh 0vw;
+}
+
+.UIDesign button:hover, .Websites button:hover{
+  background-color: rgb(53, 179, 252);
+  transition: 0.2s;
+  cursor: none;
+
+}
+@media screen and (min-width: 650px) {
+  section {
+    padding: 6vh 10vw;
+  }
+  .MobileMenu,
+  .Hamburger {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+  }
+
+  .nav-links:hover {
+    color: rgb(53, 179, 252);
+  }
+
+  #Title {
+    font-size: 2rem;
+  }
+
+  .nav-links li {
+    padding: 0vh 3vw;
+    font-size: 1rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    cursor: none;
+  }
+
+  .nav-links a:hover {
+    color: rgb(53, 179, 252);
+    transition: 0.3s;
+    cursor: none;
+  }
+
+  .Welcome {
+    font-size: 2rem;
+  }
+
+  .Intro_Text p {
+    font-size: 1.4rem;
+  }
+
+  .WelcomeLinks {
+    padding-top: 0vh;
+  }
+  .WelcomeLinks a {
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.1rem;
+    padding-bottom: 2%;
+  }
+
+  /* Home Page CSS */
+
+  .AboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Text Picture"
+      "Text2 Text2";
+  }
+
+  .AboutMe img {
+    margin-left: 2.5%;
+    width: 95%;
+  }
+
+  .Interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "InterestsText InterestsText"
+      "ZeusText InterestsZeus"
+      "CoffeeText InterestsCoffee"
+      "TravellingText InterestsTravel";
+  }
+
+  .Skills ul {
+    columns: 2;
+  }
+
+  /* My Work Page CSS */
+
+  .Projects {
+    width: 40%;
+    margin-bottom: 2vh;
+  }
+
+  .UIDesign {
     background-color: rgb(32, 32, 32);
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "UITitle UITitle UITitle UITitle UITitle"
-    "UIText UIText UIText UIText UIText"
-    "MoodsText  MoodsText MoodsText MoodsImage MoodsImage"
-    "LinksImage LinksImage LinksText LinksText LinksText";
-}
+    grid-template-areas:
+      "UITitle UITitle UITitle UITitle UITitle"
+      "UIText UIText UIText UIText UIText"
+      "MoodsText  MoodsText MoodsText MoodsImage MoodsImage"
+      "LinksImage LinksImage LinksText LinksText LinksText";
+  }
 
-.UIDesign a:hover{
-    transform: scale(1.02);
-    transition: 0.3s;
-}
-
-.UIDesign h2{
-    padding: 5vh 0vw 2vh 0vw;
-}
-.UIDesign img{
-    width: 80%;
-}
-
-.LinksImage{
+  .LinksImage {
     margin-right: 20%;
-}
-
-.MoodsImage{
-    margin-left: 20%;;
-}
-
-.SocialMediaWork{
-    background-color: rgb(32, 32, 32);
-    color: white;
-}
-
-.Other{
- 
-}
-
-.Websites{
-  
-}
-
-  
-@media screen and (min-width: 650px) {
-
-    section{
-        padding: 6vh 10vw;
-    }
-        .MobileMenu, .Hamburger{
-            display: none;
-        }
-        .nav-links{
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            color: white;
-        }
-        
-        .nav-links:hover{
-            color: rgb(98, 197, 255)
-        }
-        
-        #Title{
-            font-size: 2rem;
-        }
-        
-        .nav-links li{
-            padding: 0vh 3vw;
-            font-size: 1rem;
-        
-        }
-        .nav-links a{
-            text-decoration: none;
-            color: white;
-            cursor: none;
-        }
- 
-        .nav-links a:hover{
-            color:  rgb(98, 197, 255);
-            transition: 0.3s;
-            cursor: none;
-        }
-        
-        .Welcome{
-            font-size: 2rem;
-        }
-        
-        .Intro_Text p{
-         font-size: 1.4rem;
-        }
-
-.WelcomeLinks{
-    padding-top: 0vh;
-}
-.WelcomeLinks a{
-    font-size: 1.4rem;
-
-}
-        
-
-h1{
-    font-size: 1.7rem;
-    font-weight: 600;
+    margin-left: 0%;
+    padding: 0vh;
   }
   
-  h2{
-    font-size: 1.4rem;
-    font-weight: 600;
+  .MoodsImage {
+    margin-left: 20%;
+    padding: 0vh;
+  }
+  .UIDesign button, .Websites button{
+    width: 80%;
+    margin-left: 10%
+
+   
+  
   }
   
-  p{
-    font-size: 1.1rem;
-    padding-bottom: 2%;
-  }
   
+  /* Contact Page CSS */
 
-
-/* Home Page CSS */ 
-
-.AboutMe{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "Text Picture"
-    "Text2 Text2"
- 
-
+  /* Blog Page CSS */
 }
 
-.AboutMe img{
-    margin-left: 2.5%;
-    width: 95%;
-}
-
-
-.Interests{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "InterestsText InterestsZeus"
-    "InterestsTravel InterestsCoffee"
-}
-
-
-.Skills ul{
-    columns: 2;
-}
-
-
-
-/* My Work Page CSS */ 
-
-/* Contact Page CSS */ 
-
-/* Blog Page CSS */ 
-
-
-
-}
-
-
+/* Laptop Screen size */
 @media screen and (min-width: 1000px) {
 
-    /* Home Page CSS */ 
-    .AboutMe{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "Text Picture"
-        "Text2 Picture"
-    
-    }
-
-    .Slider{
-        display: grid;
-        padding: 10vh 7vw;
-        align-items: center;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: "WelcomeText Links"
-        "IntroText SocialMediaIcons"
-    }
-
-    nav{
-        padding: 0vh 7vw;
-  
-        }
-
-    .Intro_Text p, .WelcomeLinks a{
-        font-size: 1.5rem;
-       }
-
-    .Welcome{
+  #Title {
     font-size: 2.5rem;
-    padding: 2vh 0vw;
-    }
+  }
 
-    .WelcomeLinks{
-        height: 60%;
-        margin-left: 5vw;
-    }
+  h1 {
+    font-size: 2em;
+    font-weight: 600;
+  }
 
-    .SocialMedia{
-        margin-left: 5vw;
-    }
+  h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+  }
 
+  p {
+    font-size: 1.4em;
+  }
 
-    .SocialMedia .fa {
-        font-size: 3.5rem;
-    }
-    
-/* My Work Page CSS */ 
+  .nav-links li {
+    padding: 0vh 3vw;
+    font-size: 1.4rem;
+  }
+  section {
+    padding: 6vh 12vw;
+  }
 
-/* Contact Page CSS */ 
+  /* Home Page CSS */
+  .AboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Text Picture"
+      "Text2 Picture";
+  }
 
-/* Blog Page CSS */ 
+  .Slider {
+    display: grid;
+    padding: 10vh 6vw;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "WelcomeText Links"
+      "IntroText SocialMediaIcons";
+  }
 
+  nav {
+    padding: 0vh 7vw;
+  }
+
+  .Intro_Text p,
+  .WelcomeLinks a {
+    font-size: 1.5rem;
+  }
+
+  .Welcome {
+    font-size: 2.6rem;
+    padding: 5vh 0vw;
+  }
+
+  .WelcomeLinks {
+    height: 60%;
+    margin-left: 5vw;
+  }
+
+  .SocialMedia {
+    margin-left: 5vw;
+  }
+
+  .SocialMedia .fa {
+    font-size: 3.5rem;
+  }
+
+  /* My Work Page CSS */
+  .Projects {
+    position: relative;
+    width: 20%;
+    margin: 5vh 1vw;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    color: white;
+  }
+  /* Contact Page CSS */
+
+  /* Blog Page CSS */
 }
 
-
-  @media screen and (min-width: 1400px) {
-section{
+/* Desktop Screen size */
+@media screen and (min-width: 1650px) {
+  section {
     padding: 8vh 15vw;
-}
+  }
 
-.Slider{
+  .Slider {
     padding: 10vh 10vw;
-}
+  }
 
-nav{
+  nav {
     padding: 0vh 10vw;
+  }
+  .Welcome {
+    font-size: 3.5rem;
+    padding: 2vh 0vw;
+  }
 
-    }
-    .Welcome{
-        font-size: 3.5rem;
-        padding: 2vh 0vw
-    }
-    
-    .Intro_Text p, .WelcomeLinks a{
-     font-size: 2rem;
-    }
+  .Intro_Text p,
+  .WelcomeLinks a {
+    font-size: 2rem;
+  }
 
+  .nav-links li {
+    font-size: 1.5rem;
+  }
 
-    .nav-links li{
-        font-size: 1.5rem;
-    
-    }
+  #Title {
+    font-size: 3rem;
+  }
 
-    #Title{
-        font-size: 3rem;
-    }
+  h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
 
-    h1{
-        font-size: 2.2em;
-        font-weight: 600;
-      }
-      
-      h2{
-        font-size: 1.9em;
-        font-weight: 600;
-      }
-      
-      p{
-        font-size: 1.5em;
-      }
+  h2 {
+    font-size: 1.9em;
+    font-weight: 600;
+  }
 
+  p {
+    font-size: 1.5em;
+  }
 
-    .WelcomeLinks{
-        height: 50%;
-        font-size: 1.5vw;
-    }
-    
+  .WelcomeLinks {
+    height: 50%;
+    font-size: 1.5vw;
+  }
 
-/* Home Page CSS */ 
+  /* Home Page CSS */
 
-/* My Work Page CSS */ 
+  /* My Work Page CSS */
 
-/* Contact Page CSS */ 
+  /* Contact Page CSS */
 
-/* Blog Page CSS */ 
-
-
+  /* Blog Page CSS */
 }

@@ -11,7 +11,9 @@
 
   <div class="ProjectDiv">
   <div class="Projects">
+    
     <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
+    <h2>Moods.</h2>
     <div class="overlay">
       <div class="ProjectText"><p>I hate my life</p>
       <button>Kill me</button></div>
@@ -19,20 +21,51 @@
   </div>
 
 
+    <div class="Projects">
+       <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
+       <h2>Student Links</h2>
+       <div class="overlay">
+        <div class="ProjectText"><p>I hate my life</p>
+        <button>Kill me</button></div>
+      </div>
+    </div>
+
+    <div class="Projects">
+      <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
+      <h2>Adhar Project</h2>
+      <div class="overlay">
+        <div class="ProjectText"><p>I hate my life</p>
+        <button>Kill me</button></div>
+      </div>
+    </div>
+
+    <div class="Projects">
+      
+      <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
+      <h2>Mental Health Awareness</h2>
+      <div class="overlay">
+        <div class="ProjectText"><p>I hate my life</p>
+        <button>Kill me</button></div>
+      </div>
+    </div>
+  </div>
 
   <style>
 
     .ProjectDiv{
       display: flex;
-      width: 90%;
+      width: 100%;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
     
     }
     .Projects {
   position: relative;
-  width: 40%;
-  margin: 1vw;
+  width: 35%;
+  margin: 5vh 1vw;
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+  color: white
 
 }
 
@@ -40,6 +73,7 @@
   display: block;
   width: 100%;
   height: auto;
+
 }
 
 .overlay {
@@ -47,7 +81,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: rgb(32, 32, 32);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -56,7 +90,7 @@
 }
 
 .Projects:hover .overlay {
-  height: 50%;
+  height: 100%;
 }
 
 .ProjectText {
