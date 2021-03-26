@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.typekit.net/rwg4trk.css">
+    <link href='CSS\General.css' rel='stylesheet' type='text/css'>
+    <link href='CSS\MyCup.css' rel='stylesheet' type='text/css'>
+</head>
+<header>
+  <div id="SideBarContainer">
+    <h1 class="PageTitle">
+
+        <svg id="Logo" data-name="Logo" xmlns="http://www.w3.org/2000/svg" width="15%" viewBox="0 0 205.12 113.82" alt="67 Degrees Logo"><defs>
+          <style>.cls-1{fill:#f29222;}.cls-1,.cls-2,.cls-3{stroke:#f29222;stroke-miterlimit:10;}.cls-2{fill:none;stroke-width:9px;}.cls-3{fill:#423222;}</style>
+        </defs><title>Logo Filled</title>
+        <rect id="LogoPlate" class="cls-1" x="4.5" y="94.52" width="153.56" height="18.8"/>
+        <rect id="LogoCup" class="cls-2" x="4.5" y="4.5" width="153.85" height="78.04"/>
+        <polyline id="LogoHandle" class="cls-2" points="165.96 13.09 200.62 13.09 200.62 54.61 165.96 54.61"/>
+        <rect id="LogoCoffee" class="cls-3" x="8.93" y="8.52" width="147" height="70" transform-origin="40% 38% " transform="rotate(180)"/>
+        </svg>67&#176; Degrees</h1>
+
+<nav id="myHeader">
+<span class="control" onclick="openNav()"; onclick=" closeNav()">&#9776; </span>
+  <a class="nav" href="index.html">Home</a>
+  <a class="nav" href="Menu.html">Menu</a>
+  <a class="nav" href="MyCup.html" style="border: 0.4vw solid #F29222;">Quiz</a>
+  <a class="nav" href="FindUs.html">Find Us</a>
+
+  <div id="Sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="Menu.html">Menu</a>
+    <a href="MyCup.html" style="color: #F29222">Quiz</a>
+    <a href="FindUs.html">Find Us</a>
+  </div>
+</nav>
+</header>
+<body>
+
+<div class="container">
+    <h2>Want to test your coffee knowledge?</h2>
+    <p>If you're a coffee fanatic like us, why not test your knowledge about coffee and learn a quick thing or two?
+      This short quiz will test your knowledge of coffees history and the legend of its discovery many centuries ago. Click
+      the button below to reveal the quiz!</p>
+
+  <button class="button" onclick="DisplayQuiz()">Click here to reveal the coffee quiz!</button>
+
+
+<div id="QuizContainer" style="Display: none;">
+
+
+<div id="CoffeeQuiz">
+<h1>67&#176; Degrees Coffee Quiz</h1>
+
+
+<p id="QuizQuestions"></p>
+<div class="QuizOptions">
+<button id="Button0"><span id="Choice0"></span></button>
+<button id="Button1"><span id="Choice1"></span></button>
+<button id="Button2"><span id="Choice2"></span></button>
+<button id="Button3"><span id="Choice3"></span></button>
+
+
+
+<p id="QuestionNumber">Question X of Y.</p>
+</div>
+ </div>
+
+
+</div>
+<h2>About 67&#176; Degrees</h2>
+
+<p>67&#176; Degrees was found in 2009 by our founder, Josh Taylor. After being a barista in his youth,
+  he found that he had a great love of coffee and began dreaming of opening his own cafe in the future. Therfore,
+  after having a successful career of being a Web Developer, he opened his first store in Leicester. Since then, the nation has
+  grown to love the coffee, service and attention to detail that is always seen with any 67&#176; Degrees store.</p>.
+</div>
+<div class="Images">
+
+
+<img src="Media\Quiz4-min.jpg" alt="Quiz Page Coffee Photograph"</img>
+  <img src="Media\Quiz3-min.jpg" alt="Quiz Page Cake Photograph"</img>
+  <img src="Media\QuizPage-min.jpg" alt="Quiz Page Coffee Photograph"</img>
+  <img src="Media\QuizPage 2-min.jpg" alt="Quiz Page Sandwich Photograph"</img>
+
+</div>
+
+  <h2 style="text-align: center;">How was coffee first discovered?</h2>
+<div class="container" style="display: flex; flex-wrap: wrap;">
+
+
+    <p class="StyledParagraph">
+      The legend of coffees discovery dates back to the 11th century, where a farmer found that one of his goats began
+      acting very energetic after eating berries from a 'coffea arabica' tree. The farmer himself tried some of the berries, finding himself to
+      have the same energetic feel. The coffee berries were then took to religious leaders, who (after some convincing) put them into hot water, leading to
+      the drinks discovery.
+    </p>
+    <img src="Media\Coffee Discovery-min.jpg" alt="Quiz Page Sandwich Photograph" class="DiscoveryImage"</img>
+</div>
+<div class="container">
+      <p>
+
+    It wasn't until the 15th century that coffee was widely accepted by society, as it was believed to be a drink made from the
+    devil. However, soon coffee found its way across the world, with England and other countries discovering it in the 17th discovery,
+    gradually transforming it into the drink we all know and love today.
+
+    </p>
+
+</div>
+</div>
+
+
+
+
+</div>
+<footer>
+  <p><br>Josh Taylor<br>P2447145<br>Multimedia Coursework 2</p>
+  </footer>
+  </body>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <script src="javascript.js"></script>
+  <script src="MyCup.js"></script>
+
+</html>

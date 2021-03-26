@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Americano Drink"  alt="Americano Drink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 361 202" style="enable-background:new 0 0 361 202;" xml:space="preserve">
+<style type="text/css">
+	.Americano{fill:#603913;}
+	.Americano1{fill:#341E10;}
+	.Americano2{fill:#A3A3A3;}
+	.Americano3{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+	.Americano4{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+</style>
+<g >
+
+	<rect id="AmericanoCoffee" x="11.3" y="112.8" class="Americano1" width="264.3" height="30.3" transform-origin="40% 62% " transform="rotate(180)"  />
+</g>
+<g>
+	<rect  id="AmericanoSteam" x="11" y="8.1" class="Americano" width="264.3" height="102.4" transform-origin="40% 30% " transform="rotate(180)" />
+</g>
+<g id="AmericanoCup">
+	<rect x="11" y="160.5" class="Americano2" width="264.3" height="32.4"/>
+	<g>
+		<rect x="11" y="160.5" class="Americano3" width="264.3" height="32.4"/>
+		<rect x="11" y="5.5" class="Americano4" width="264.9" height="134.3"/>
+		<polyline class="Americano4" points="289,20.3 348.6,20.3 348.6,91.8 289,91.8 		"/>
+	</g>
+</g>
+</svg>

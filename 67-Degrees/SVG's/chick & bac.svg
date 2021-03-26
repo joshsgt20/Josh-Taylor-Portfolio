@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Chicken and Bacon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 271 191" style="enable-background:new 0 0 271 191;" xml:space="preserve">
+<style type="text/css">
+	.ChickenBread{fill:#E0BA7E;}
+	.Chicken{fill:#EDE2EA;}
+	.Chicken1{fill:#BE1E2D;}
+</style>
+<g id="ChickenBread">
+	<g>
+		<g>
+			<rect id="Bread" y="144.9" class="ChickenBread" width="264.3" height="32.4"/>
+		</g>
+		<g>
+			<rect y="6.5" class="ChickenBread" width="264.3" height="32.4"/>
+		</g>
+	</g>
+</g>
+<g id="Chicken">
+	<rect y="90.4" class="Chicken" width="264.3" height="33.5"/>
+</g>
+<g id="Chicken">
+	<rect y="56.9" class="Chicken1" width="264.3" height="33.5"/>
+</g>
+</svg>

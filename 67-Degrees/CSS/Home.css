@@ -1,0 +1,294 @@
+@import url("https://use.typekit.net/rwg4trk.css");
+h1{
+ font-family: bebas-neue, sans-serif;
+
+   font-size: 4vw;
+}
+
+h2{
+ font-family: bebas-neue, sans-serif;
+
+
+   font-size: 3vw;
+}
+p{
+ font-family: Bookman Old Style;
+ font-size: 2vw;
+
+}
+
+.SlideshowContainer {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.SlideshowContainer img, video{
+  width: 100%;
+  padding-top: 0;
+  height: auto;
+  max-height: 100%;
+  overflow: hidden;
+  z-index: -1;
+
+
+
+}
+
+.Caption {
+  color: white;
+  padding: 1vh 1vw;
+  position: absolute;
+  background-color: #333349;
+  border: 0.2vw solid black;
+  font-family: Bookman Old Style;
+  font-size: 2vw;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+  box-shadow: 1px 1px 3px black;
+
+}
+
+.Caption:hover{
+  transition: 0.2s;
+  transform: scale(1.03);
+  box-shadow: 2px 2px 5px black;
+  background-color: #F29222;
+  color: black;
+}
+
+.Dot {
+  height: 2vw;
+  width: 2vw;
+  background-color: #333349;
+  border-radius: 40%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.background {
+  background-color: #515775;
+}
+
+/* Fading animation */
+.FadeAnimation {
+  -webkit-animation-name: FadeAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-name: FadeAnimation;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes FadeAnimation {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes FadeAnimation {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+.Wrap{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: .5vw solid #333349;
+
+}
+.Latest{
+  background-color: #333349;
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+
+.Images{
+  width: 30%;
+  outline:0.2vw solid #333349;
+}
+
+
+
+@media screen and (max-width: 500px) {
+.Latest{
+  width: 100%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.Images{
+  width: 80%;
+  height: auto;
+}
+
+.Wrap{
+  width: 90%;
+  border: none;
+}
+
+}
+
+.Newsletter{
+  width: 100%;
+  background-color: #333349;
+  height: auto;
+  color: white;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+#PDFDownload p{
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#PDFDownload p:hover{
+  transition: 0.2s;
+  transform: scale(1.03);
+  color: #F29222;
+  cursor: pointer;
+}
+
+#RewardButton{
+  background-color: #F29222;
+  color: black;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+  padding: 0;
+  outline: 0.2vw solid black;
+  text-align: center;
+  width: 35%;
+  margin: auto;
+
+}
+
+#RewardButton:hover{
+  transition: 0.2s;
+  transform: scale(1.03);
+  box-shadow: 2px 2px 5px black;
+  background-color: #333349;
+  color: white;
+  outline: 0.2vw solid white;
+
+}
+
+
+
+.FAQ{
+  background-color: #333349;
+  color: white;
+  width: 75%;
+  cursor: pointer;
+  margin: auto;
+  box-shadow: 1px 1px 3px black;
+  padding: 0;
+  outline: 0.2vw solid black;
+  text-align: center;
+}
+
+.FAQ:hover{
+  transition: 0.2s;
+  transform: scale(1.03);
+  box-shadow: 2px 2px 5px black;
+  background-color: #F29222;
+  color: black;
+}
+
+ .Answer{
+   display: none;
+   width: 90%;
+   margin: auto;
+   font-family: Bookman Old Style;
+   font-size: 2vw;
+
+ }
+
+ .FAQContainer{
+   height: auto;
+   padding: 0;
+   text-align: center;
+   margin:auto;
+ }
+
+
+
+
+
+.RewardBackground {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+
+
+.RewardContainer{
+  background-color: white;
+  cursor: pointer;
+  margin: auto;
+  box-shadow: 1px 1px 3px black;
+  padding: 0;
+  outline: 0.2vw solid #333349;
+  text-align: center;
+  width: 75%;
+  height: 20vh;
+
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+/* Modal Content */
+.RewardModal {
+  background-color: #D4DEE3;;
+  margin: auto;
+  padding: 2vw;
+  border: 1vw solid #888;
+  width: 80%;
+  height: auto;
+  color: black;
+  border: .5vw solid black;
+
+}
+
+/* The Close Button */
+.CloseButton {
+  color: grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.CloseButton:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

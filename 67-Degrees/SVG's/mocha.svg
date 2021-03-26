@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Mocha" alt="Mocha Drink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 361 196.3" style="enable-background:new 0 0 361 196.3;" xml:space="preserve">
+<style type="text/css">
+	.Mocha{fill:#603913;}
+	.Mocha1{fill:#8B5E3C;}
+	.Mocha2{fill:#BC9366;}
+	.Mocha3{fill:#F3E7D7;}
+	.Mocha4{fill:#A3A3A3;}
+	.Mocha5{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+	.Mocha6{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+</style>
+<g>
+	<rect id="MochaCoffee" x="10.2" y="106.4" class="Mocha" width="264.3" height="33.5" transform-origin="40% 62% " transform="rotate(180)"/>
+</g>
+<g>
+	<rect id="Mocha" x="10.2" y="73.2" class="Mocha1" width="264.3" height="33.2" transform-origin="40% 45% " transform="rotate(180)"/>
+</g>
+<g>
+	<rect id="MochaMilk" x="10.5" y="39.8" class="Mocha2" width="264.3" height="33.5" transform-origin="40% 28% " transform="rotate(180)"/>
+</g>
+<g>
+	<rect id="MochaCream" x="10.5" y="6" class="Mocha3" width="264.3" height="33.5" transform-origin="40% 12% " transform="rotate(180)"/>
+</g>
+<g id="MochaCup">
+	<g>
+		<rect x="10.2" y="161" class="Mocha4" width="264.3" height="32.4"/>
+		<g>
+			<rect x="10.2" y="161" class="Mocha5" width="264.3" height="32.4"/>
+			<rect x="10.2" y="6" class="Mocha6" width="264.9" height="134.3"/>
+			<polyline class="Mocha6" points="288.2,20.8 347.9,20.8 347.9,92.3 288.2,92.3 			"/>
+		</g>
+	</g>
+</g>
+</svg>

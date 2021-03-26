@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Cappuccino"  alt="Cappuccino Drink"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 357.8 206" style="enable-background:new 0 0 357.8 206;" xml:space="preserve">
+<style type="text/css">
+	.Cappuccino{fill:#603913;}
+	.Cappuccino1{fill:#A88063;}
+	.Cappuccino2{fill:#EDCFB3;}
+	.Cappuccino3{fill:#A3A3A3;}
+	.Cappuccino4{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+	.Cappuccino5{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+</style>
+<g>
+	<rect id="CappuccinoCoffee" x="9.9" y="118.3" class="Cappuccino" width="264.3" height="21.5" transform-origin="40% 62% " transform="rotate(180)"/>
+</g>
+<g>
+	<rect id="CappuccinoMilk" x="9.6" y="82" class="Cappuccino1" width="264.3" height="36.3" transform-origin="40% 48% " transform="rotate(180)"/>
+</g>
+<g>
+	<rect id="CappuccinoFoam" x="9.6" y="9" class="Cappuccino2" width="264.3" height="73" transform-origin="40% 22% " transform="rotate(180)"/>
+</g>
+<g id="CappuccinoCup">
+	<rect x="9.6" y="164" class="Cappuccino3" width="264.3" height="32.4"/>
+	<g>
+		<rect x="9.6" y="164" class="Cappuccino4" width="264.3" height="32.4"/>
+		<rect x="9.6" y="9" class="Cappuccino5" width="264.9" height="134.3"/>
+		<polyline class="Cappuccino5" points="287.6,23.8 347.3,23.8 347.3,95.3 287.6,95.3 		"/>
+	</g>
+</g>
+</svg>

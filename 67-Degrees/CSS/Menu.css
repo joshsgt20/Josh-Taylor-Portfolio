@@ -1,0 +1,249 @@
+ @import url("https://use.typekit.net/rwg4trk.css");
+h1{
+  font-family: bebas-neue, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+    font-size: 4vw;
+}
+
+h2{
+  font-family: bebas-neue, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+    font-size: 3vw;
+}
+p{
+  font-family: Bookman Old Style;
+  font-size: 2vw;
+
+}
+
+.description{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+
+.button_container{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  width: 90%
+}
+#button1, #button2{
+  color: black;
+  background-color: #F29222;
+  width: 35%;
+  margin: auto;
+  padding: 1vw;
+  margin: 1%;
+  border: 0.2vw solid #333349;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 1vw;
+}
+#button1:hover, #button2:hover {
+  background-color: #333349;
+  transition: 0.2s;
+  color: white;
+  transform: scale(1.03);
+  border: 0.2vw solid black
+}
+
+/*small screen - phone */
+@media screen and (max-width: 600px) {
+#button1, #button2{
+  width: 60%;
+}
+#button3, #button4{
+  width: 50%;
+}
+}
+/*media screen - tablet */
+@media screen and (min-width: 601){
+#button1, #button2,{
+  width: 40%
+}
+#button3, #button4{
+    width: 45%;
+  }
+}
+
+/*large screen - laptpop or desktop */
+
+@media screen and (min-width: 1200px) {
+#button3, #button4{
+  width: 25%;
+}
+#button1, #button2,{
+  width: 20%
+}
+
+h2{
+  font-size: 2vw;
+}
+
+
+}
+
+button img{
+  width: 100%
+}
+
+
+.ItemContainer{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  width: 85%
+}
+
+.ItemButton{
+  color: white;
+  background-color: #333349;
+  width: 35%;
+  margin: auto;
+  padding: 1vw;
+  margin: 1%;
+  border: 0.2vw solid black;
+  border-radius: .5vw;
+  box-shadow: 1px 1px 3px black;
+
+}
+
+.ItemButton:hover{
+  color: black;
+  background-color: #F29222;
+  transition: 0.2s;
+  transform: scale(1.03);
+}
+
+/*Modal css*/
+ .background {
+           display: none;
+           position: fixed;
+           z-index: 1;
+           padding-top: 100px;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           overflow: auto;
+           background-color: rgb(0,0,0);
+           background-color: rgba(0,0,0,0.4);
+           -webkit-animation-name: animatetop;
+           -webkit-animation-duration: 0.4s;
+           animation-name: animatetop;
+           animation-duration: 0.4s
+           }
+
+           /* Add Animation */
+           @-webkit-keyframes animatetop {
+           from {top:-300px; opacity:0}
+           to {top:0; opacity:1}
+           }
+
+           @keyframes animatetop {
+           from {top:-300px; opacity:0}
+           to {top:0; opacity:1}
+           }
+       /* Modal Content */
+       .Popupcontent {
+           background-color: #333349;;
+           margin: auto;
+           padding: 20px;
+           border: 0.2vw solid black;
+           width: 80%;
+           height: auto;
+           color: white;
+
+       }
+
+       /* The Close Button */
+       .closeButton {
+           color: grey;
+           float: right;
+           font-size: 4vw;
+           font-weight: bold;
+       }
+
+       .closeButton:hover {
+           color: black;
+           text-decoration: none;
+           cursor: pointer;
+       }
+
+
+  .Image{
+    width: 40%;
+    height: auto;
+  }
+
+.ProductDescription{
+  width: 55%;
+  float: right;
+  padding: 10;
+}
+
+.EasterWrap{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.EasterWrap img{
+  width: 40%;
+  outline:0.2vw solid #333349;
+}
+
+
+@media screen and (max-width: 600px) {
+.EasterWrap img {
+  width: 80%;
+}
+
+}
+.Text{
+  width: 80%;
+  text-align: center;
+}
+.Extras{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  height: auto;
+}
+table{
+  margin: auto;
+  width: 100%;
+  border: 0.3vw solid black;
+}
+table th{
+  background-color: #333349;
+  color: #F29222;
+  width: 50%;
+  padding: 0;
+  font-size: 3vw;
+  font-family:bebas-neue, sans-serif;;
+}
+
+table tr{
+  background-color: white;
+  padding: 0;
+  font-size: 2vw;
+  font-family: Bookman Old Style;
+  outline: 0.1vw solid black;
+
+}

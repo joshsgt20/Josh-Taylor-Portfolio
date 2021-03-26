@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Bacon and Egg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 277 186" style="enable-background:new 0 0 277 186;" xml:space="preserve">
+<style type="text/css">
+	.BaconBread{fill:#E0BA7E;}
+	.Bacon{fill:#FFF200;}
+	.Bacon1{fill:#BE1E2D;}
+</style>
+<g id="BaconBread">
+	<g>
+		<rect x="6" y="144.4" class="BaconBread" width="264.3" height="32.4"/>
+	</g>
+	<g>
+		<rect x="6" y="5.9" class="BaconBread" width="264.3" height="32.4"/>
+	</g>
+</g>
+<rect id="Bacon" x="6" y="89.9" class="Bacon1" width="264.3" height="33.5"/>
+<rect id="Bacon" x="6" y="56.4" class="Bacon" width="264.3" height="33.5"/>
+</svg>

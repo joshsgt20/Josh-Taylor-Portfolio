@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="HotChocDrink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 356 201" style="enable-background:new 0 0 356 201;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#543000;}
+	.st1{fill:#B27B56;}
+	.st2{fill:#F3E7D7;}
+	.st3{fill:#A3A3A3;}
+	.st4{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+</style>
+<g>
+	<rect id="HotChoc" x="8.3" y="107.7" class="st0" width="264.3" height="33.2" transform-origin="40% 62% " transform="rotate(180)"/>
+</g>
+<g>
+	<rect id="HotChocMilk" x="8.6" y="30.3" class="st1" width="264.3" height="79.2" transform-origin="40% 35% " transform="rotate(180)"/>
+</g>
+<g>
+	<rect id="HotChocFoam" x="8.3" y="6.6" class="st2" width="264.3" height="27.3" transform-origin="40% 11% " transform="rotate(180)"/>
+</g>
+<g id="HotChocCup">
+	<g>
+		<rect x="9.2" y="161.8" class="st3" width="264.3" height="32.4"/>
+		<g>
+			<rect x="9.2" y="161.8" class="st4" width="264.3" height="32.4"/>
+			<rect x="9.2" y="6.8" class="st5" width="264.9" height="134.3"/>
+			<polyline class="st5" points="284.3,23.8 344,23.8 344,95.3 284.3,95.3 			"/>
+		</g>
+	</g>
+</g>
+</svg>

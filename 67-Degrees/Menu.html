@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/rwg4trk.css">
+    <link href='CSS\General.css' rel='stylesheet' type='text/css'>
+      <link href='CSS\Menu.css' rel='stylesheet' type='text/css'>
+</head>
+<header>
+  <div id="SideBarContainer">
+    <h1 class="PageTitle">
+
+        <svg id="Logo" data-name="Logo" xmlns="http://www.w3.org/2000/svg" width="15%" viewBox="0 0 205.12 113.82" alt="67 Degrees Logo"><defs>
+          <style>.cls-1{fill:#f29222;}.cls-1,.cls-2,.cls-3{stroke:#f29222;stroke-miterlimit:10;}.cls-2{fill:none;stroke-width:9px;}.cls-3{fill:#423222;}</style>
+        </defs><title>Logo Filled</title>
+        <rect id="LogoPlate" class="cls-1" x="4.5" y="94.52" width="153.56" height="18.8"/>
+        <rect id="LogoCup" class="cls-2" x="4.5" y="4.5" width="153.85" height="78.04"/>
+        <polyline id="LogoHandle" class="cls-2" points="165.96 13.09 200.62 13.09 200.62 54.61 165.96 54.61"/>
+        <rect id="LogoCoffee" class="cls-3" x="8.93" y="8.52" width="147" height="70" transform-origin="40% 38% " transform="rotate(180)"/>
+        </svg>
+        67&#176; Degrees</h1>
+
+<nav id="myHeader">
+<span class="control" onclick="openNav()"; onclick=" closeNav()">&#9776; </span>
+  <a class="nav" href="index.html">Home</a>
+  <a class="nav" href="Menu.html" style="border: 0.4vw solid #F29222;">Menu</a>
+  <a class="nav" href="MyCup.html">Quiz</a>
+  <a class="nav" href="FindUs.html" >Find Us</a>
+
+  <div id="Sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="Menu.html" style="color: #F29222">Menu</a>
+    <a href="MyCup.html">Quiz</a>
+    <a href="FindUs.html">Find Us</a>
+  </div>
+</nav>
+
+
+</header>
+
+
+
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="JavaScript\Menu.js"></script>
+  <script src="JavaScript\javascript.js"></script>
+
+  <div class="description">
+    <h1>Menu</h1>
+    <p>Click on the buttons below to view our selection of freshly made drinks and sandwiches!</p>
+
+    <div class="button_container">
+  <button id="button1"> <h2 style="width: 100%">Click here to display food items</h2>
+  <img src="Media\Asset 1-min.png" alt="Sandwich Image Button"</img> </button>
+<button id="button2"> <h2 style="width: 100%">Click Here to display drink items</h2> <img src="Media\Asset 2-min.png" alt="Drink Button and Image" </img>
+</button>
+</div>
+
+</div>
+
+  <div class="ItemContainer" id="FoodItems" style="display: none"><h1 style="width:100%;">Food Items</h1><p style="width:100%;">Click on each sandwich to view more information!</p>
+  <button class="ItemButton" id="button3" ><h2 style="width:100%;">Chicken and Bacon Sandwich</h2><img src="SVG's\chick & bac.svg" alt="Chicken and Bacon Sandwich"></img><h2>£4.15</h2></button>
+
+    <button class="ItemButton" id="button3"> <h2 style="width:100%;">Tuna and Sweetcorn Sandwich</h2><img src="SVG's\tun & sweet.svg" alt="Tuna and Sweetcorn Sandwich"></img><h2>£3.45</h2></button>
+
+    <button class="ItemButton" id="button3"> <h2 style="width:100%;">Bacon and Egg Sandwich</h2><img src="SVG's\bac & egg.svg" alt="Bacon and Egg Sandwich"></img><h2>£4.00</h2></button>
+
+      <button class="ItemButton" id="button3"> <h2 style="width:100%;">Ham and Rocket Sandwich</h2><img src="SVG's\ham & rock.svg" alt="Ham Salad Sandwich"></img><h2>£3.10</h2></button>
+
+      <button class="ItemButton" id="button3"> <h2 style="width:100%;">Cheese and Onion Sandwich</h2><img src="SVG's\cheese & onion.svg" alt="Cheese and Onion Sandwich"></img><h2>£3.15</h2></button>
+
+
+    <button class="ItemButton" id="button3"> <h2 style="width:100%;">Falafel and Rocket Sandwich</h2><img src="SVG's\falafel & rocket.svg" alt="Falafel and Rocket Sandwich"></img><h2>£4.15</h2> </button>
+</div>
+
+  <div class="ItemContainer" id="Drinks" style="display: none">
+    <h1 style="width:100%;">Drink Items</h1> <p style="width:100%;">Click on each drink to view more information!</p>
+    <button class="ItemButton" id="button4">   <h2 style="width:100%;">Latte</h2><img src="SVG's\latte.svg" alt="Latte Drink"></img><h2>£3.10</h2> </button>
+
+    <button class="ItemButton" id="button4">   <h2 style="width:100%;">Cappuccino</h2><img src="SVG's\capp.svg" alt="Cappuccino Drink"></img><h2>£3.10</h2> </button>
+
+        <button class="ItemButton" id="button4"> <h2 style="width:100%;">Americano</h2> <img src="SVG's\americano.svg" alt="Americano Drink"></img><h2>£2.90</h2></button>
+
+      <button class="ItemButton" id="button4">   <h2 style="width:100%;">Mocha</h2><img src="SVG's\mocha.svg" alt="Mocha Drink"></img><h2>£3.50</h2> </button>
+
+      <button class="ItemButton" id="button4">   <h2 style="width:100%;">Chai Tea Latte</h2><img src="SVG's\chai.svg" alt="Chai Drink"></img> <h2>£3.20</h2></button>
+
+            <button class="ItemButton" id="button4">   <h2 style="width:100%;">Hot Chocolate</h2><img src="SVG's\hot choc.svg" alt="Hot Chocolate Drink"></img> <h2>£3.20</h2>
+            </button> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+            <h2>Chicken and Bacon Sandwich</h2>
+                <div class="ProductDescription"><p>Carefully cut streaky bacon with grilled chicken breast, soaked in ceaser sauce and then wrapped in lightly grilled
+                sourdough bread.</p></div>
+                <div class="Image">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg version="1.1" id="Chicken and Bacon" alt="Chicken and Bacon Sandwich" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 271 191" style="enable-background:new 0 0 271 191;" xml:space="preserve">
+                  <style type="text/css">
+                  	.ChickenBread{fill:#E0BA7E;}
+                  	.Chicken1{fill:#EDE2EA;}
+                  	.Chicken{fill:#BE1E2D;}
+                  </style>
+                  <g id="ChickenBread">
+                  	<g>
+                  		<g>
+                  			<rect id="Bread" y="144.9" class="ChickenBread" width="264.3" height="32.4"/>
+                  		</g>
+                  		<g>
+                  			<rect y="6.5" class="ChickenBread" width="264.3" height="32.4"/>
+                  		</g>
+                  	</g>
+                  </g>
+                  <g id="Chicken">
+                  	<rect y="90.4" class="Chicken" width="264.3" height="33.5"/>
+                  </g>
+                  <g id="Chicken">
+                  	<rect y="56.9" class="Chicken1" width="264.3" height="33.5"/>
+                  </g>
+                  </svg> </div> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Tuna and Sweetcorn Sandwich</h2>
+        <div class="ProductDescription"><p>Fresh tuna and sweetcorn, mixed with some of our own light mayonaise, wrapped in our fresh, grilled
+        sourdough bread.</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Tuna and Sweetcorn" alt ="Tuna and Sweetcorn Sandwich" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 270.2 182.1" style="enable-background:new 0 0 270.2 182.1;" xml:space="preserve">
+          <style type="text/css">
+          	.TunaBread{fill:#E0BA7E;}
+          	.Tuna{fill:#27AAE1;}
+          	.Tuna1{fill:#E8E62C;}
+          </style>
+          <g id="TunaBread">
+          	<g id="TunaBread">
+          		<g>
+          			<rect x="2.9" y="144.5" class="TunaBread" width="264.3" height="32.4"/>
+          		</g>
+          		<g>
+          			<rect x="2.9" y="6" class="TunaBread" width="264.3" height="32.4"/>
+          		</g>
+          	</g>
+          </g>
+          <g id="Tuna">
+          	<rect id="tuna" x="2.9" y="90" class="Tuna1" width="264.3" height="33.5"/>
+          </g>
+          <g id="Tuna">
+          	<rect id="sweetcorn" x="2.9" y="56.5" class="Tuna" width="264.3" height="33.5"/>
+          </g>
+          </svg> </div> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+    <span class="closeButton close_multi">×</span>
+      <h2>Bacon and Egg Sandwich</h2>
+      <div class="ProductDescription"><p>Streaky bacon, cut to have less fat content, mixed with scrambled egg, in our grilled
+      sourdough bread. Add your own choice of sauce on the counter.</p></div>
+        <div class="Image">
+
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Bacon and Egg" alt="Bacon and Egg Sandwich" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 277 186" style="enable-background:new 0 0 277 186;" xml:space="preserve">
+          <style type="text/css">
+          	.BaconBread{fill:#E0BA7E;}
+          	.Bacon{fill:#FFF200;}
+          	.Bacon1{fill:#BE1E2D;}
+          </style>
+          <g id="BaconBread">
+          	<g>
+          		<rect x="6" y="144.4" class="BaconBread" width="264.3" height="32.4"/>
+          	</g>
+          	<g>
+          		<rect x="6" y="5.9" class="BaconBread" width="264.3" height="32.4"/>
+          	</g>
+          </g>
+          <rect id="Bacon" x="6" y="89.9" class="Bacon1" width="264.3" height="33.5"/>
+          <rect id="Bacon" x="6" y="56.4" class="Bacon" width="264.3" height="33.5"/>
+        </svg> </div> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Ham Salad Sandwich</h2>
+        <div class="ProductDescription"><p>Thick cut, lean ham, mixed with cucumber, lettuce and tomatoes, all in
+        grilled sourdough bread.</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Ham Salad" alt="Ham Salad Sandwich" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 276 182" style="enable-background:new 0 0 276 182;" xml:space="preserve">
+          <style type="text/css">
+          	.HamBread{fill:#E0BA7E;}
+          	.Ham{fill:#E292BF;}
+          	.Ham1{fill:#006838;}
+          </style>
+          <g id="HamBread">
+          	<g>
+          		<rect x="2.9" y="143.5" class="HamBread" width="264.3" height="32.4"/>
+          	</g>
+          	<g>
+          		<rect x="2.9" y="5" class="HamBread" width="264.3" height="32.4"/>
+          	</g>
+          </g>
+          <rect id="Ham" x="2.9" y="87" class="Ham" width="264.3" height="33.5"/>
+          <rect id="Ham" x="2.9" y="53.5" class="Ham1" width="264.3" height="33.5"/>
+        </svg> </div> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Cheese and Onion Sandwich</h2>
+        <div class="ProductDescription"><p>Mature cheddar cheese and onion, in grilled sourdough bread.</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Cheese and Onion" alt="Cheese and Onion Sandwich" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 278 187" style="enable-background:new 0 0 278 187;" xml:space="preserve">
+          <style type="text/css">
+          	.CheeseBread{fill:#E0BA7E;}
+          	.Cheese{fill:#EFC81F;}
+          	.Cheese1{fill:#7F3F98;}
+          </style>
+          <g id="CheeseBread">
+          	<g>
+          		<g>
+          			<rect x="5.9" y="145.4" class="CheeseBread" width="264.3" height="32.4"/>
+          		</g>
+          		<g>
+          			<rect x="5.9" y="6.9" class="CheeseBread" width="264.3" height="32.4"/>
+          		</g>
+          	</g>
+          </g>
+          <g id="Cheese">
+          	<rect x="5.9" y="90.9" class="Cheese" width="264.3" height="33.5"/>
+          </g>
+          <g id="Cheese">
+          	<rect x="5.9" y="57.4" class="Cheese1" width="264.3" height="33.5"/>
+          </g>
+        </svg> </div> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Falafel and Rocket Sandwich</h2>
+        <div class="ProductDescription"><p>Fresh, mediteranian falafels with some wild rocket, in grilled
+        sourdough bread and your choice of sauce. </p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Falafel and Rocket" alt="Falafel and Rocket Salad Sandwich" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 278 185" style="enable-background:new 0 0 278 185;" xml:space="preserve">
+          <style type="text/css">
+          	.FalafelBread{fill:#E0BA7E;}
+          	.Falafel{fill:#2BB673;}
+          	.Falafel1{fill:#65481C;}
+          </style>
+          <g id="FalafelBread">
+          	<g>
+          		<rect x="5.9" y="144.4" class="FalafelBread" width="264.3" height="32.4"/>
+          	</g>
+          	<g>
+          		<rect x="5.9" y="5.9" class="FalafelBread" width="264.3" height="32.4"/>
+          	</g>
+          </g>
+          <rect id="Falafel" x="5.9" y="89.9" class="Falafel" width="264.3" height="33.5"/>
+          <rect id="Falafel" x="5.9" y="56.4" class="Falafel1" width="264.3" height="33.5"/>
+        </svg> </div> </div> </div>
+
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Latte</h2>
+        <div class="ProductDescription"><p>Two espresso shots, steamed creamy milk and some light froth. Make it your own by adding one of our syrups
+        or alternative milks, or have it iced.</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Latte"  alt="Latte Drink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 353.7 199.3" style="enable-background:new 0 0 353.7 199.3;" xml:space="preserve">
+          <style type="text/css">
+          	.Latte{fill:#603913;}
+          	.Latte1{fill:#EFBA73;}
+          	.Latte2{fill:#EFD4B9;}
+          	.Latte3{fill:#A3A3A3;stroke:#A3A3A3;stroke-miterlimit:10;}
+          	.Latte4{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+          	.Latte5{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+          </style>
+          <g id="Latte">
+          	<g>
+          		<rect id="LatteCoffee" x="7.1" y="107.3" class="Latte" width="264.3" height="33.5" transform-origin="40% 62% " transform="rotate(180)"/>
+          	</g>
+          	<g>
+          		<rect id="LatteMilk" x="7.1" y="30.2" class="Latte1" width="264.3" height="70.1" transform-origin="40% 34% " transform="rotate(180)"/>
+          	</g>
+          	<g>
+          		<rect id="LatteFoam" x="7.3" y="6.9" class="Latte2" width="264.3" height="29" transform-origin="40% 11% " transform="rotate(180)"/>
+          	</g>
+          	<g id="LatteCup">
+          			<rect x="7.1" y="161.9" class="Latte3" width="264.3" height="32.4"/>
+          			<g>
+          				<rect x="7.1" y="161.9" class="Latte4" width="264.3" height="32.4"/>
+          				<rect x="7.1" y="6.9" class="Latte5" width="264.9" height="134.3"/>
+          				<polyline class="Latte5" points="285,21.7 344.7,21.7 344.7,93.2 285,93.2"/>
+          			</g></g></g>
+          </svg></div> </div></div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Cappuccino</h2>
+        <div class="ProductDescription"><p>Two espresso shots and steamed, very frothy milk. Make it your own by adding one of our syrups
+        or alternative milks, or have it iced.</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Cappuccino"  alt="Cappuccino Drink"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 357.8 206" style="enable-background:new 0 0 357.8 206;" xml:space="preserve">
+          <style type="text/css">
+          	.Cappuccino{fill:#603913;}
+          	.Cappuccino1{fill:#A88063;}
+          	.Cappuccino2{fill:#EDCFB3;}
+          	.Cappuccino3{fill:#A3A3A3;}
+          	.Cappuccino4{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+          	.Cappuccino5{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+          </style>
+          <g>
+          	<rect id="CappuccinoCoffee" x="9.9" y="118.3" class="Cappuccino" width="264.3" height="21.5" transform-origin="40% 62% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="CappuccinoMilk" x="9.6" y="82" class="Cappuccino1" width="264.3" height="36.3" transform-origin="40% 48% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="CappuccinoFoam" x="9.6" y="9" class="Cappuccino2" width="264.3" height="73" transform-origin="40% 22% " transform="rotate(180)"/>
+          </g>
+          <g id="CappuccinoCup">
+          	<rect x="9.6" y="164" class="Cappuccino3" width="264.3" height="32.4"/>
+          	<g>
+          		<rect x="9.6" y="164" class="Cappuccino4" width="264.3" height="32.4"/>
+          		<rect x="9.6" y="9" class="Cappuccino5" width="264.9" height="134.3"/>
+          		<polyline class="Cappuccino5" points="287.6,23.8 347.3,23.8 347.3,95.3 287.6,95.3 		"/>
+          	</g> </g>
+          </svg></div></div></div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Americano</h2>
+        <div class="ProductDescription"><p>Three espresso shots and boiling water added. Have it as strong as you wish and your own choice of milk or have it black.</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Americano Drink"  alt="Americano Drink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 361 202" style="enable-background:new 0 0 361 202;" xml:space="preserve">
+          <style type="text/css">
+          	.Americano{fill:#603913;}
+          	.Americano1{fill:#341E10;}
+          	.Americano2{fill:#A3A3A3;}
+          	.Americano3{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+          	.Americano4{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+          </style>
+          <g>
+          	<rect id="AmericanoCoffee" x="11.3" y="112.8" class="Americano1" width="264.3" height="30.3" transform-origin="40% 62% " transform="rotate(180)"  />
+          </g>
+          <g>
+          	<rect  id="AmericanoSteam" x="11" y="8.1" class="Americano" width="264.3" height="102.4" transform-origin="40% 30% " transform="rotate(180)" />
+          </g>
+          <g id="AmericanoCup">
+          	<rect x="11" y="160.5" class="Americano2" width="264.3" height="32.4"/>
+          	<g>
+          		<rect x="11" y="160.5" class="Americano3" width="264.3" height="32.4"/>
+          		<rect x="11" y="5.5" class="Americano4" width="264.9" height="134.3"/>
+          		<polyline class="Americano4" points="289,20.3 348.6,20.3 348.6,91.8 289,91.8 		"/>
+          	</g>
+          </g>
+        </svg></div></div></div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Mocha</h2>
+        <div class="ProductDescription"><p>Four pumps of our mocha syrup, two espresso shots, steamed creamy milk and topped with whipped cream.
+          Make it your own by adding one of our syrups or alternative milks, or have it iced.</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="MochaDrink" alt="Mocha Drink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 361 196.3" style="enable-background:new 0 0 361 196.3;" xml:space="preserve">
+          <style type="text/css">
+          	.Mocha{fill:#603913;}
+          	.Mocha1{fill:#8B5E3C;}
+          	.Mocha2{fill:#BC9366;}
+          	.Mocha3{fill:#F3E7D7;}
+          	.Mocha4{fill:#A3A3A3;}
+          	.Mocha5{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+          	.Mocha6{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+          </style>
+          <g>
+          	<rect id="MochaCoffee" x="10.2" y="106.4" class="Mocha" width="264.3" height="33.5" transform-origin="40% 62% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="Mocha" x="10.2" y="73.2" class="Mocha1" width="264.3" height="33.2" transform-origin="40% 45% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="MochaMilk" x="10.5" y="39.8" class="Mocha2" width="264.3" height="33.5" transform-origin="40% 28% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="MochaCream" x="10.5" y="6" class="Mocha3" width="264.3" height="33.5" transform-origin="40% 12% " transform="rotate(180)"/>
+          </g>
+          <g id="MochaCup">
+          	<g>
+          		<rect x="10.2" y="161" class="Mocha4" width="264.3" height="32.4"/>
+          		<g>
+          			<rect x="10.2" y="161" class="Mocha5" width="264.3" height="32.4"/>
+          			<rect x="10.2" y="6" class="Mocha6" width="264.9" height="134.3"/>
+          			<polyline class="Mocha6" points="288.2,20.8 347.9,20.8 347.9,92.3 288.2,92.3 			"/>
+          		</g></g></g>
+          </svg>
+       </div> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Chai Tea Latte</h2>
+        <div class="ProductDescription"><p>Four pumps of our chai syrup and some steamed milk. Make it your own
+        with our alternative milks, or make a 'dirty chai' with some espresso shots! Or, why not try it iced?</p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Chai Drink"  alt="Chai Drink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 355 201" style="enable-background:new 0 0 355 201;" xml:space="preserve">
+          <style type="text/css">
+          	.Chai{fill:#9A772C;}
+          	.Chai1{fill:#EDCFB3;}
+          	.Chai2{fill:#A3A3A3;}
+          	.Chai3{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+          	.Chai4{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+          </style>
+          <g>
+          	<rect id="Chai" x="7.5" y="107.1" class="Chai" width="264.3" height="33.5" transform-origin="39% 62% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="ChaiMilk" x="7.2" y="7" class="Chai1" width="264.3" height="100.4" transform-origin="39% 29% " transform="rotate(180)"/>
+          </g>
+          <g id="ChaiCup">
+          	<g>
+          		<rect x="7.2" y="161.7" class="Chai2" width="264.3" height="32.4"/>
+          		<g>
+          			<rect x="7.2" y="161.7" class="Chai3" width="264.3" height="32.4"/>
+          			<rect x="7.2" y="6.7" class="Chai4" width="264.9" height="134.3"/>
+          			<polyline class="Chai4" points="285.2,21.5 344.9,21.5 344.9,93 285.2,93 			"/>
+          		</g></g></g>
+          </svg>
+</div> </div> </div>
+
+<div class="background Modal">
+    <div class="Popupcontent">
+        <span class="closeButton close_multi">×</span>
+        <h2>Hot Chocolate</h2>
+        <div class="ProductDescription"><p>Four pumps of our mocha syrup, steamed, creamy milk and topped with whipped cream!
+          Make it your own by adding one of our syrups or alternative milks, or have it iced.</p></p></div>
+        <div class="Image">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="HotChocDrink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+          	 y="0px" viewBox="0 0 356 201" style="enable-background:new 0 0 356 201;" xml:space="preserve">
+          <style type="text/css">
+          	.st0{fill:#543000;}
+          	.st1{fill:#B27B56;}
+          	.st2{fill:#F3E7D7;}
+          	.st3{fill:#A3A3A3;}
+          	.st4{fill:none;stroke:#A3A3A3;stroke-miterlimit:10;}
+          	.st5{fill:none;stroke:#A3A3A3;stroke-width:9;stroke-miterlimit:10;}
+          </style>
+          <g>
+          	<rect id="HotChoc" x="8.3" y="107.7" class="st0" width="264.3" height="33.2" transform-origin="40% 62% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="HotChocMilk" x="8.6" y="30.3" class="st1" width="264.3" height="73.2" transform-origin="40% 35% " transform="rotate(180)"/>
+          </g>
+          <g>
+          	<rect id="HotChocFoam" x="8.3" y="6.6" class="st2" width="264.3" height="27.3" transform-origin="40% 11% " transform="rotate(180)"/>
+          </g>
+          <g id="HotChocCup">
+          	<g>
+          		<rect x="9.2" y="161.8" class="st3" width="264.3" height="32.4"/>
+          		<g>
+          			<rect x="9.2" y="161.8" class="st4" width="264.3" height="32.4"/>
+          			<rect x="9.2" y="6.8" class="st5" width="264.9" height="134.3"/>
+          			<polyline class="st5" points="284.3,23.8 344,23.8 344,95.3 284.3,95.3"/>
+          		</g></g> </g>
+          </svg>
+      </div></div></div>
+<h1 style="text-align: center;">Our Easter Selection</h1>
+<div class="EasterWrap">
+  <img src="Media\Easter Cakes-min.jpg" alt="Easter Cakes Image" class="EasterCakes"></img>
+
+  <img src="Media\Easter Cake 2-min.jpg" alt="Easter Cakes Image" class="EasterCakes2"></img>
+
+
+</div>
+  <div class="Text" style="margin: auto;"><p>With the arrival of Easter, we bring to you a selection of new bakery items
+  and some new drinks!</p>
+  <p>The food items include the release of freshly baked Hot Cross Buns, Simnel Cake, Carrot cake, rice crispy cakes and chocolate Easter cakes!</p>
+<p>Make your drink more special with our new syrups, where you can try the new Marzipan Latte and Hot Cross Bun Latte!</p></div>
+<div class="Extras">
+<h1>Make your drink extra special!</h1>
+<p>At 67&#176; Degrees, you can make your drink unique and special to you by simily asking the barista at the till! For example, you can have extra shots
+in your coffee, add whipped cream, choose one of our dairy alternative milks (Soya, Oat, Coconut, Almond and Coconut), have your drink iced or add any
+syrup of your choice!</p>
+
+<table>
+  <tr>
+    <th>Extras</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Alternative Milks (Soya, Coconut, Oat, Almond)</td>
+    <td>No Extra Cost</td>
+  </tr>
+  <tr>
+    <td>Syrups (Vanilla, Caramel, Chai, Mocha, Peppermint, Hazelnut)</td>
+    <td>50p</td>
+  </tr>
+  <tr>
+    <td>Sugar Free Syrups (SF Vanilla, SF Caramel, SF Hazelnut)</td>
+    <td>50p</td>
+  </tr>
+  <tr>
+    <td>Easter Syrups (Marzipan, Hot Cross Bun)</td>
+    <td>60p</td>
+  </tr>
+  <tr>
+    <td>Alternative Coffee Blend (Speciality for each cafe)</td>
+    <td>No Extra Cost</td>
+  </tr>
+  <tr>
+    <td>Decaf Coffee</td>
+    <td>No Extra Cost</td>
+  </tr>
+  <tr>
+    <td>Whipped Cream</td>
+    <td>50p</td>
+  </tr>
+  <tr>
+    <td>Have Your Drink Iced</td>
+    <td>No Extra Cost</td>
+  </tr>
+</table>
+</div>
+<br>
+<footer>
+  <p>Josh Taylor<br>P2447145<br>Multimedia Coursework 2</p>
+</footer>
+
+  </body>
+
+
+<script src="Menu.js"></script>
+<script src="javascript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</html>
