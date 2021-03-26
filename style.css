@@ -424,8 +424,47 @@ ul li {
   background-color: rgb(53, 179, 252);
   transition: 0.2s;
   cursor: none;
-
 }
+
+.SiteIframes{
+  display: none;
+}
+
+
+
+  /* Contact Page CSS */
+  .Contact{
+   padding-top: 12vh;
+  }
+   .Contact .fa {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 5%;
+    background: rgb(32, 32, 32);
+    color: white;
+    padding: 1vw;
+    justify-content: center;
+    border: 0.3vh solid rgb(32, 32, 32);
+  }
+  
+  .Contact .fa:hover {
+    background-color: rgb(53, 179, 252);
+    transition: 0.3s;
+    cursor: none;
+  }
+  
+  .Contact_Social_Media{
+    justify-content: space-around;
+    display: flex;
+    
+
+  }
+
+  .Contact img{
+    width: 40%;
+  }
+
 @media screen and (min-width: 650px) {
   section {
     padding: 6vh 10vw;
@@ -597,13 +636,6 @@ ul li {
   }
 
   /* Home Page CSS */
-  .AboutMe {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "Text Picture"
-      "Text2 Picture";
-  }
 
   .Slider {
     display: grid;
@@ -645,12 +677,52 @@ ul li {
   /* My Work Page CSS */
   .Projects {
     position: relative;
-    width: 20%;
-    margin: 5vh 1vw;
+    width: 23%;
+    margin: 5vh 0.5vw;
     text-align: center;
     background-color: rgb(32, 32, 32);
     color: white;
+    font-size: 0.8rem;
   }
+
+  .Projects button{
+    font-size: 0.8rem;
+  }
+
+
+  .Websites {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "WebsiteText WebsiteText WebsiteText WebsiteText WebsiteText"
+    "MoodsText MoodsText MoodsText MoodsText MoodsText"
+    "UniSite UniSite AwarenessText AwarenessText AwarenessText"
+    "AdharText AdharText AdharText AdharSite AdharSite"
+    "GHSite GHSite GHText GHText GHText"
+    "DegreesText DegreesText DegreesText DegSite DegSite";
+  }
+  .Websites div, .SiteIframes{
+    margin: 7vh 0vw;
+  }
+  .Websites button{
+    width: 100%;
+    margin: 0
+  }
+
+  .SiteIframes{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    align-self: center;
+      
+
+  }
+  #UniSite, #GHSite{
+    margin-right: 5%;
+  }
+
+#AdharSite, #DegsSite{
+  margin-left: 5%
+}
   /* Contact Page CSS */
 
   /* Blog Page CSS */
@@ -679,6 +751,7 @@ ul li {
     font-size: 2rem;
   }
 
+
   .nav-links li {
     font-size: 1.5rem;
   }
@@ -705,6 +778,15 @@ ul li {
     height: 50%;
     font-size: 1.5vw;
   }
+
+  .AboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Text Picture"
+      "Text2 Picture";
+  }
+
 
   /* Home Page CSS */
 
