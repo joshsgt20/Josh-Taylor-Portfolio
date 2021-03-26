@@ -1,0 +1,67 @@
+#Team{
+   width: 80%;
+   margin: auto;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+.Images{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   text-align: center;
+
+ 
+}
+
+.Images img{
+   width: 25%;
+   height: auto;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+
+  @media screen and (max-width: 700px) {
+     .Images img{
+        width: 70%;
+        padding-top: 2%;
+     }
+
+     #Team{
+      width: 100%;
+      padding: 0;
+   }
+
+   
+   h1{
+      font-family: rockwell-nova ;
+      font-size: 3.2vw;
+      
+   }
+   
+   h2{
+      font-size: 2.9vw;
+      font-family: rockwell-nova;
+      
+   }
+   
+   p{
+    font-family: rockwell-nova;
+    font-size: 2.7vw;
+   }
+  
+   .PageTitle{
+    font-family: rockwell-nova;
+    font-size: 1.7vw;
+   }
+}  
+
+  @media screen and (min-width: 1700px) { 
+      #Team{
+         width: 60%;
+         padding-left: 20%;
+         padding-right: 20%;
+      }
+  }

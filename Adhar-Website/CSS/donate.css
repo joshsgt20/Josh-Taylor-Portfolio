@@ -1,0 +1,122 @@
+.Paypal{
+    width: 30%;;
+}
+
+
+.Main img{
+    width: 40%;
+    margin: auto;
+
+}
+
+
+.Donate{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+}
+
+#Donate img{
+    width: 30%;
+    height: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#Donate img:hover{
+    opacity: 0.8;
+}
+
+.Support span{
+    font-size: 1.6vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Support{
+    display: flex;
+    background-color: #582558;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+   
+}
+
+.Support div{
+    width: 25%;
+    background-color: white;;
+    border: 0.5vw solid #d5cfd8;
+    border-radius: 1vw;
+    padding: 0.5%;
+    
+}
+
+.LocalGiving{
+   display: flex;
+   justify-content: center;
+
+}
+
+.Paypal{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.Paypal form:hover{
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    #Donate img{
+        width: 80%;
+        padding-top: 1%;
+    }
+
+    .Support span{
+        font-size: 2vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    #PaypalImage{
+        display: none;
+      }
+
+      
+    h1{
+        font-family: rockwell-nova ;
+        font-size: 3.2vw;
+        
+     }
+     
+     h2{
+        font-size: 2.9vw;
+        font-family: rockwell-nova;
+        
+     }
+     
+     p{
+      font-family: rockwell-nova;
+      font-size: 2.7vw;
+     }
+    
+     .PageTitle{
+      font-family: rockwell-nova;
+      font-size: 1.7vw;
+     }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .Support div{
+        width: 90%;
+        margin-top: 2%;;
+        margin-bottom: 2%;
+      }
+  
+}

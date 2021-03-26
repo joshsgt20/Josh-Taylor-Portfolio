@@ -1,0 +1,393 @@
+
+.SlideshowContainer {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  
+    
+  }
+  
+  .SlideshowContainer img{
+    width: 100%;
+    padding-top: 0;
+    height: auto;
+    max-height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  
+    
+  }
+  
+
+  
+ .Grid{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-areas: "title logo"
+                        "text logo"
+                      ;
+  align-items: center;
+}
+
+.Grid img{
+  width: 80%;
+  margin-left: 10%;
+}
+
+  .Banner a{
+    color: rgb(82, 6, 88);
+  }
+  @keyframes Fade{
+    from{opacity: 0.5; }
+    to {opacity: 2;}
+  }
+  
+  .Fade{
+    animation-name: Fade;
+    animation-duration: 4s;
+    z-index: -1
+  
+  }
+  .Caption {
+    color: white;
+    padding: 1vh 1vw;
+    position: absolute;
+    background-color: #7a4488;
+    border: 0.2vw solid black;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px black;
+    font-size: 1.7vw;
+    font-family: rockwell-nova;
+  
+  }
+  
+  .Caption:hover{
+    transition: 0.2s;
+    transform: scale(1.03);
+    box-shadow: 2px 2px 5px black;
+    background-color: #7a4488;
+    color: black;
+  }
+  
+  .ProjectsCollection{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  
+   
+    
+  }
+  
+  .Project{
+    color: white;
+    width: 25%;
+    height: auto;
+    margin: 2%;
+    border: 0.2vw solid black;
+    box-shadow: 1px 1px 3px black;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .ProjectPortrait{
+    color: white;
+    width: 17%;
+    height: auto;
+    margin: 2%;
+    border: 0.2vw solid black;
+    box-shadow: 1px 1px 3px black;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .Project img, .ProjectPortrait img{
+    width: 100%;
+    display: block;
+    background-color: white;
+    height: auto;
+  }
+  
+  .ProjectInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fcecfc;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .Project:hover .ProjectInfo, .ProjectPortrait:hover .ProjectInfo{
+    height: 100%;
+  }
+  
+  .ProjectText {
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 98%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+
+  .ProjectText p{
+    font-size: 1.2vw;
+  }
+
+  .ProjectText h2{
+    font-size: 1.5vw;
+  }
+  
+  .Instagram{
+    width: 50%;
+    height: 40vh;
+    overflow: scroll;
+    margin: auto;
+    float: right;
+  }
+    .Donate{
+      background-color: #582558;;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      text-align: center;
+      color: white;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      display: flex;
+      flex-wrap: wrap;
+  
+    }
+  
+    .DonateButton{
+      background-color: white;
+      width: 25%;
+      margin: auto;
+      color: black;
+      border: 0.5vw solid #d5cfd8;
+      border-radius: 1vw;
+      padding: 0.5%;
+      
+    }
+    .DonateButton button{
+      background-color: #8bdcf9;
+      color: black;
+      font-weight: 600;
+      font-size: 1.5vw;
+      border: 0.2vw solid black;
+      padding: 1vw;
+      font-family: rockwell-nova
+    }
+  
+    .DonateButton button:hover{
+      background-color: #1db4e9;
+      transition: 0.2s;
+    }
+  
+    .fa {
+      padding: 4% 2% 4% 2%;
+      font-size: 3vw;
+      min-width: 12%;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    #YouTubeLogo {
+      background: rgb(131, 10, 10);
+      color: white;
+    }
+  
+
+
+
+
+
+
+
+      @media screen and (max-width: 500px) {
+       .Caption{
+          font-size: 2.4vw;
+          font-family: rockwell-nova;
+       }    
+       
+       .ProjectText p{
+        font-size: 3.5vw;
+        font-family: rockwell-nova;
+     }   
+     .ProjectText h2{
+       font-size: 3.8vw;
+       font-family: rockwell-nova;  
+    }  
+
+    h1{
+      font-family: rockwell-nova ;
+      font-size: 3.2vw;
+      
+   }
+   
+   h2{
+      font-size: 2.9vw;
+      font-family: rockwell-nova;
+      
+   }
+   
+   p{
+    font-family: rockwell-nova;
+    font-size: 2.7vw;
+   }
+  
+   .PageTitle{
+    font-family: rockwell-nova;
+    font-size: 1.7vw;
+   }
+   
+   .Grid{
+    display: inline;
+
+   }
+  
+      }
+
+
+      @media screen and (max-width: 700px) {
+        .Navigation, .dropdown, .DonateLink{
+          display: none;
+        }
+        
+        #SmallMenuOpen{
+          display: flex;
+        }
+  
+        .Project{
+          width:70%;
+        }
+      
+        .ProjectPortrait{
+          width: 60%;
+        }
+      
+  
+      
+      .fa{
+          min-width: 3%;
+          padding: 2%;
+      }
+        }
+  
+  
+      
+      
+      @media screen and (min-width: 700px) { 
+        
+     
+          .Project{
+            width:45%;
+          }
+        
+          .ProjectPortrait{
+            width: 45%;
+          }
+    
+          .ProjectText p{
+            font-size: 2vw;
+            font-family: rockwell-nova;
+         }   
+         .ProjectText h2{
+           font-size: 2.2vw;
+           font-family: rockwell-nova;  
+        }  
+        
+  
+        }
+    
+  
+
+
+      @media screen and (max-width: 1000px) { 
+        .DonateButton{
+          width: 85%;
+          min-height: 5vh;
+          margin-top: 1vh;
+          margin-bottom: 1vh;
+        }
+
+    
+  
+        }
+    
+      
+      
+      @media screen and (min-width: 1100px) {
+        .Caption{
+          font-size: 1.2vw;
+          font-family: rockwell-nova;
+       }
+      
+       .ProjectText p{
+        font-size: 1vw;
+        font-family: rockwell-nova;
+     }
+     .ProjectText h2{
+       font-size: 1.2vw;
+       font-family: rockwell-nova;
+    }
+  
+          
+     
+    .Project{
+      width:25%;
+    }
+  
+    .ProjectPortrait{
+      width: 17%;
+    }}  
+      @media screen and (min-width: 1700px) { 
+        .Caption{
+          font-size: 1vw;
+          font-family: rockwell-nova;  
+       }
+
+       
+       @media screen and (min-width: 1700px) { 
+        .ProjectText p{
+           font-size: 0.8vw;
+           font-family: rockwell-nova;  
+        }
+        .ProjectText h2{
+          font-size: 1vw;
+          font-family: rockwell-nova;  
+       }
+      }
+    }
+
+    

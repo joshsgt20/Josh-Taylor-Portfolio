@@ -1,0 +1,171 @@
+
+label{
+    display: block;
+    padding: 1%;
+
+  
+  }
+
+
+form{
+    font-family: rockwell-nova;
+    font-size: 1.5vw;
+    padding: 0;
+  
+}
+
+  input, textarea{
+      width: 90%;
+      font-family: rockwell-nova;
+      font-size: 1.5vw;
+      background-color: #f4eef75b;
+
+  }
+
+
+  input[type=submit]{
+    color: white;
+    padding: 0.5vh 0.5vw;
+    background-color: #7a4488;
+    border: 0.2vw solid black;
+    font-size: 1.5vw;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px black;
+    font-family: rockwell-nova;
+    width: 15%
+  }
+
+  input[type=submit]:hover{
+    transition: 0.2s;
+    transform: scale(1.03);
+    box-shadow: 2px 2px 5px black;
+    background-color: #7a4488;
+  }
+  
+  .contact{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      padding-left:0 ;
+  }
+
+  .contact div{
+    width: 30%;
+  }
+
+  .contact a, .Main a{
+      text-decoration: none;
+      color: #7a4488
+  }
+
+  
+  .contact a:hover, .Main a:hover{
+    text-decoration: none;
+    color: #412149
+}
+
+.fa {
+    padding: 2%;
+    min-width: 3%;
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 1% 2%;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  #FacebookLogo {
+    background: #3B5998;
+    color: white;
+  }
+  
+  #TwitterLogo {
+    background: #55ACEE;
+    color: white;
+  }
+  #InstagramLogo {
+    background: #125688;
+    color: white;
+  }
+  #YouTubeLogo {
+    background: rgb(131, 10, 10);
+    color: white;
+  }
+
+
+
+
+  .Twitter{
+    width: 55%;
+      height: 100vh;
+      overflow: scroll;
+      margin: auto;
+
+  }
+
+
+@media screen and (max-width: 700px) {
+
+    .contact{
+        justify-content: center;
+        margin: auto;
+    }
+    
+.contact div{
+    margin: auto;
+    width: 100%;
+    }
+
+    
+    h1{
+      font-family: rockwell-nova ;
+      font-size: 3.2vw;
+      
+   }
+   
+   h2{
+      font-size: 2.9vw;
+      font-family: rockwell-nova;
+      
+   }
+   
+   p{
+    font-family: rockwell-nova;
+    font-size: 2.7vw;
+   }
+  
+   .PageTitle{
+    font-family: rockwell-nova;
+    font-size: 1.7vw;
+   }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  form, input[type=submit], input, textarea{
+     font-size: 2.5vw;
+     font-family: rockwell-nova;
+  }     
+
+ }
+
+ @media screen and (min-width: 1100px) {
+   form, input[type=submit], input, textarea{
+     font-size: 1vw;
+     font-family: rockwell-nova;
+  }}  
+ @media screen and (min-width: 1700px) { 
+  form, input[type=submit], input, textarea{
+     font-size: 0.8vw;
+     font-family: rockwell-nova;  
+  }
+ }
+ 
