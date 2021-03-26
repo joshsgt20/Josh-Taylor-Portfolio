@@ -1,0 +1,427 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080529;
+    color: white;
+    margin: 0;
+  
+    
+}
+
+.Top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.Main{
+    width: 90%;
+    margin: auto;
+}
+h1{
+font-family: bebas-neue-pro, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 4vw;
+margin: 0;
+}
+
+h2{
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.5vw;
+    margin: 0;
+
+    }
+      
+      p{
+        font-family: bebas-neue-pro, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2.7vw;
+        }
+
+header{
+    background-color: #080529;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0;
+    margin: 0;
+    display: none;
+    z-index: 2;
+
+    
+    
+}
+
+header h1{
+font-family: bebas-neue-pro;
+font-weight: 500;
+font-style: normal;
+font-size: 5vw;
+margin-top: 0;
+
+}
+
+#Menu{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1vh;
+  padding-bottom: 1vh;;
+  z-index: 1;
+  background-color: #080529;
+}
+
+#Menu a{
+  font-family: bebas-neue-pro;
+font-weight: 500;
+font-style: normal;
+font-size: 2.5vw;
+
+}
+
+#Blue{
+border: 0.2vw solid #0aafad;
+}
+#Blue:hover{
+background-color: #0aafad
+}
+
+#Green{
+border: 0.2vw solid #8bbe41;
+}
+#Green:hover{
+background-color: #8bbe41
+}
+
+#Yellow{
+border: 0.2vw solid #f8b61d;
+}
+#Yellow:hover{
+background-color: #f8b61d
+}
+
+#Pink{
+border: 0.2vw solid #c2358c;
+}
+#Pink:hover{
+background-color: #c2358c
+}
+
+.MainMenuLink{
+  background-color: #080529;
+  color: white;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0.2vw solid #0aafad;
+  width: 24%;
+  text-align: center;
+  text-decoration: none;
+  font-family: bebas-neue-pro,
+}
+
+
+
+.MobileMenu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10vh;
+  text-align:center;
+  opacity: 0.95;
+  display: none;
+  
+}
+
+.MobileMenu a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  z-index: 2;
+  opacity: 1;
+  padding: 0.2vh;
+  margin: 1vh;
+}
+
+.MobileMenu a:hover{
+  color: #f1f1f1;
+}
+
+.MobileMenu .Close{
+  position: absolute;
+  top: 0;
+  right: 5vw;
+  font-size: 10vw;
+  padding-top: 3vh;
+
+}
+
+#SmallMenuOpen{
+font-size: 3vw;
+cursor: pointer;
+padding-left: 85%;
+
+}
+
+#SmallMenuOpen:hover{
+color: #818181
+}  
+
+
+
+.Container{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#Welcome{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #080529;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#Welcome .Text{
+  width: 80%;
+}
+#Welcome h1{
+  font-size: 6vw;
+}
+
+#Welcome h2{
+  font-size: 3vw;
+}
+
+#WhoWeAre{
+  background-color: white;
+  display: flex;;
+  color: black
+}
+
+#WhoWeAre .Text{
+  width: 65%;
+ 
+}
+#WhoWeAre #Logo{
+  width: 35%;
+  z-index: 0;
+  object-fit: cover;
+  margin: auto;
+  background-color: white;
+}
+
+#Mission2{
+  display: none;
+}
+
+
+#WhatWeDo{
+  background-color: #080529;
+}
+
+#WhatWeDo ul{
+  width: 50%;
+}
+
+#WhatWeDo svg{
+  width: 40%;
+}
+.Animation{
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+
+
+#OurGoals{
+  background-color: white;
+  color: black;
+
+}
+
+#ContactUs{
+  background-color: #080529;
+
+}
+
+#ContactUs a{
+  color: #0aafad
+}
+
+.Bottom{
+  background-size: 100%;
+  height: 25vh;
+  background-image: url("Images/Asset 2.png");
+}
+
+footer{
+    height: auto;
+    padding-top: 2%;
+    padding-bottom:2%;
+    
+}
+
+footer a{
+  text-decoration: none;
+  color: white
+}
+
+  @media screen and (max-width: 700px) {
+    h1{     
+      font-size: 4.5vw;
+   }
+   
+   h2{
+      font-size: 4vw;
+      }
+   p{
+    font-size: 3.5vw;
+   }
+
+   header{
+     display: flex;;
+   }
+
+   nav{
+     display: none;;
+   }
+
+ 
+
+   #WhoWeAre .Text{
+     width: 100%;
+   }
+
+   #WhoWeAre #Logo{
+    width: 55%;
+    
+  }
+
+.MobileMenu{
+  display: block;
+  
+}
+
+#Mission{
+  display: none;
+}
+#Mission2{
+  display: flex;
+}
+
+.Animation{
+  width: 100%;
+  padding-bottom: 2%;
+}
+#WhatWeDo ul{
+  width: 100%;
+ 
+}
+#WhatWeDo svg{
+  margin: auto;
+  width: 100%;
+}
+
+  }
+
+  
+
+  @media screen and (min-width: 650px) {
+    section {
+      padding: 6vh 10vw;
+    }
+  
+  
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      padding-bottom: 2%;
+    }
+  
+ 
+  }
+  
+  /* Laptop Screen size */
+  @media screen and (min-width: 1000px) {
+  
+ 
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
+    }
+  
+    h2 {
+      font-size: 1.7em;
+      font-weight: 600;
+    }
+  
+    p {
+      font-size: 1.4em;
+    }
+ 
+    .Container {
+      padding: 6vh 12vw;
+    }
+  
+
+  }
+  
+  /* Desktop Screen size */
+  @media screen and (min-width: 1650px) {
+    .Container {
+      padding: 8vh 15vw;
+    }
+    h1 {
+      font-size: 3em;
+      font-weight: 600;
+    }
+  
+    h2 {
+      font-size: 2.8em;
+      font-weight: 600;
+    }
+  
+    p {
+      font-size: 2.5em;
+    }
+
+  }
+  
+  
+
+
+
+
+
+
+
+
+
