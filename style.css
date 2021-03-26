@@ -288,7 +288,12 @@ ul li {
 .UIDesign {
   background-color: rgb(32, 32, 32);
   color: white;
+  
 
+}
+
+.UIDesign a {
+  transition: 0.3s;
 }
 
 .UIDesign a:hover {
@@ -301,6 +306,7 @@ ul li {
 }
 .UIDesign img {
   width: 80%;
+  transition: 0.3s;
 }
 
 .LinksImage, .MoodsImage{
@@ -425,12 +431,6 @@ ul li {
   transition: 0.2s;
   cursor: none;
 }
-
-.SiteIframes{
-  display: none;
-}
-
-
 
   /* Contact Page CSS */
   .Contact{
@@ -791,7 +791,9 @@ ul li {
   /* Home Page CSS */
 
   /* My Work Page CSS */
-
+  .Projects, .Projects button{
+    font-size: 1.3rem;
+  }
   /* Contact Page CSS */
 
   /* Blog Page CSS */

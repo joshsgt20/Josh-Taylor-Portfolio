@@ -9,70 +9,43 @@
 <body>
   
 
-  <div class="ProjectDiv">
+
   <div class="Projects">
-    
-    <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
-    <h2>Moods.</h2>
+    <div class="ProjectImage">
+      <iframe class="SiteIframes" id="AdharSite" style="grid-area: AdharSite" src="Adhar-Website\index.html" title="W3Schools Free Online Web Tutorials"></iframe>
+    </div>
     <div class="overlay">
       <div class="ProjectText"><p>I hate my life</p>
       <button>Kill me</button></div>
     </div>
-  </div>
 
 
-    <div class="Projects">
-       <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
-       <h2>Student Links</h2>
-       <div class="overlay">
-        <div class="ProjectText"><p>I hate my life</p>
-        <button>Kill me</button></div>
-      </div>
-    </div>
 
-    <div class="Projects">
-      <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
-      <h2>Adhar Project</h2>
-      <div class="overlay">
-        <div class="ProjectText"><p>I hate my life</p>
-        <button>Kill me</button></div>
-      </div>
-    </div>
-
-    <div class="Projects">
-      
-      <img src="Images\Zeus and Senka.jpg" alt="Avatar" class="ProjectImage">
-      <h2>Mental Health Awareness</h2>
-      <div class="overlay">
-        <div class="ProjectText"><p>I hate my life</p>
-        <button>Kill me</button></div>
-      </div>
-    </div>
   </div>
 
   <style>
 
-    .ProjectDiv{
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    
-    }
     .Projects {
   position: relative;
-  width: 35%;
+  width: 50vh;
+  height: 60vh;
   margin: 5vh 1vw;
   text-align: center;
-  background-color: rgb(32, 32, 32);
-  color: white
+  color: black;
+  border: 0.3vh solid rgb(32, 32, 32);
 
 }
 
-.ProjectImage {
-  display: block;
+iframe{
+  height: 100%;
   width: 100%;
-  height: auto;
+  border: none;
+}
+
+.ProjectImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
 
 }
 
@@ -81,20 +54,22 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(32, 32, 32);
+  background-color: white;
   overflow: hidden;
   width: 100%;
-  height: 0;
+  height: 100%;
   transition: .5s ease;
-  border: ;
+  display: flex
+
 }
 
 .Projects:hover .overlay {
-  height: 100%;
+  opacity: 0;
+  width: 0;
 }
 
 .ProjectText {
-  color: white;
+  color: black;
   position: absolute;
   top: 50%;
   left: 50%;
