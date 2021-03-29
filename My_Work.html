@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Taylor Portfolio - WebHead</title>
+    <title>Josh Taylor Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet">
@@ -29,24 +29,23 @@
         </ul>
         <div class="Hamburger" onclick="AnimateMenu(this)">
             <span class="menuIcon material-icons">
-    
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-            
             </span>
         
         </div>
+
         <ul class="MobileMenu">
             <li><a class="MobileMenuLink" href="index.html">Home</a></li>
             <li><a class="MobileMenuLink" href="My_Work.html">My Work</a></li>
             <li><a class="MobileMenuLink" href="Contact.html">Contact</a></li>
             <li><a class="MobileMenuLink" href="Blog.html">Blog</a></li>
             <br>
-            <li><a href="#" class="fa fa-twitter"></a></li><br>
-            <li><a href="#" class="fa fa-linkedin"></a></li><br>
-            <li><a href="#" class="fa fa-instagram"></a></li>
-          </ul>
+            <li><a href="https://twitter.com/thewebheadjt" target="_blank" class="fa fa-twitter"></a></li><br>
+            <li><a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin"></a></li><br>
+            <li><a href="https://www.instagram.com/thewebheadjt/" target="_blank" class="fa fa-instagram"></a></li>
+        </ul>
     
     </nav>
 
@@ -63,7 +62,7 @@
         <p>This has allowed me to complete some projects for organisations on a freelance basis, which is something I'm always open to.</p>
         <h2>Main Projects</h2>
         <div class="ProjectDiv">
-            <div class="Projects">
+            <div class="Projects" id="MoodsAnimation">
               
               <img src="Images\Moods Logo.png" alt="Avatar" class="ProjectImage">
          
@@ -71,41 +70,47 @@
                 <div class="ProjectText">
                    <strong>Moods.</strong> <br>
                     A mental health companion app. <br>
-                <button>UI Design</button>
-                <button>Website</button></div>
+                    <a href="#MoodsUI">
+                <button>UI Design</button></a>
+                <a href="#MoodsWebsite">
+                <button>Website</button></a></div>
               </div>
             </div>
           
           
-              <div class="Projects">
+              <div class="Projects" id="LinksAnimation">
                  <img src="Images\Student Links Logo.png" alt="Avatar" class="ProjectImage">
                  <div class="overlay">
                   <div class="ProjectText">
                 <strong>Student Links</strong> <br>
                     A Student support and activity app. <br>
-                  <button>UI Design</button></div>
+                    <a href="#StudentLinks">
+                  <button>UI Design</button> </a></div>
                 </div>
               </div>
           
-              <div class="Projects">
+              <div class="Projects" id="AdharAnimation">
                 <img src="Images\Adhar Logo.png" alt="Avatar" class="ProjectImage">
                 <div class="overlay">
                   <div class="ProjectText">
                   <strong>Adhar Project</strong> <br>
                       A leicester based mental health charity. <br>
-                  <button>Website</button></div>
+                      <a href="#AdharWebsite">
+                  <button>Website</button></a></div>
                 </div>
               </div>
           
-              <div class="Projects">
+              <div class="Projects" id="UMHAnimation">
                 
                 <img src="Images\UMH Logo.png" alt="Avatar" class="ProjectImage">
                 <div class="overlay">
                   <div class="ProjectText">
                   <strong>Mental Health Awareness</strong> <br>
                     The project for my dissertation. <br>
-                  <button>Websites</button>
-                  <button>Social Media</button></div>
+                    <a href="#AwarenessWebsites">
+                  <button>Websites</button></a>
+                  <a href="#AwarenessMedia">
+                  <button>Social Media</button></a></div>
                 </div>
               </div>
 
@@ -127,7 +132,7 @@
 </p>
 
 </div>
-<div style="grid-area: MoodsText">
+<div style="grid-area: MoodsText" id="MoodsUI">
  
 <h2>Moods.</h2>
     <p>Moods. is a progressive web application that was designed from wireframes, to prototype and finally to a functioning website.</p>
@@ -135,15 +140,17 @@
       <strong>anger</strong>, and <strong>happiness</strong>. It provides information and advice for those who may be suffering from the listed problems, and also features built-in 
     applications to help them - such as a <strong>to-do app</strong>, <strong>meditation app</strong>, <strong>anxiety</strong>, and more.</p>
 <br>
-    <button><h2 style="padding: 0;">Moods UI Design</h2></button>
-    <button><h2 style="padding: 0">Moods Website</h2></button>
+<a href="https://projects.invisionapp.com/prototype/Moods-Final-Josh-Taylor-ckja8fedg00adtk01wfk8kmhx/play/e0e468ab" target="_blank">
+    <button><h2 style="padding: 0;">Moods UI Design</h2></button> </a>
+    <a href="Moods Site\index.html" target="_blank">
+    <button><h2 style="padding: 0">Moods Website</h2></button></a>
 
 </div>
 
 <a style="grid-area: MoodsImage" href="https://projects.invisionapp.com/prototype/Moods-Final-Josh-Taylor-ckja8fedg00adtk01wfk8kmhx/play/e0e468ab" target="_blank">
     <img src="Images\Moods. Cover-01.png" class="MoodsImage" alt=""> </a>
 
-<div style="grid-area: LinksText">
+<div style="grid-area: LinksText" id="StudentLinks">
 <h2>Student Links</h2> 
 <p>Student Links is a complete prototype that I designed on InVision, which was created for one of my assignments to create a unique application that 
   would be useful.
@@ -153,11 +160,17 @@
 </p>
 
 <br>
-    <button><h2 style="padding: 0;">Student Links UI Design</h2></button>
+<a href="https://projects.invisionapp.com/prototype/Student-Links-Josh-Taylor-ckkyjfsdv00ayx201l6gb6ehs/play/d0277456" target="_blank">
+    <button><h2 style="padding: 0;">Student Links UI Design</h2></button> </a>
     
 </div>
 <a style="grid-area: LinksImage" href="https://projects.invisionapp.com/prototype/Student-Links-Josh-Taylor-ckkyjfsdv00ayx201l6gb6ehs/play/d0277456" target="_blank">
 <img src="Images\Student Links Cover-01.PNG" class="LinksImage" alt=""> </a>
+
+
+
+
+
 
     </section>
 
@@ -166,22 +179,37 @@
       <div style="grid-area: WebsiteText; margin: 0">
         <h1>Websites</h1>
         <p>These show some of the websites that I have created for both university and for different organisations as freelance projects.</p>
-        <p>All of these sites <strong>(including this portfolio site)</strong> have been coded using HTML, CSS and JavaScript to be fully functional on any device, with a 
-          good design and an easy UI.
+        <p>All of these sites <strong>(including this portfolio site)</strong> have been coded using HTML, CSS and JavaScript to be fully functional on any device, with the aim of 
+          achieving a good design and an easy UI.
         </p>
 </div>
 
-<div style="grid-area: MoodsText">
+<div class="WebstiteDescription"id="MoodsWebsite" style="grid-area: MoodsText">
         <h2>Moods. Site</h2>
         <p>This site was created after the orignal design of its prototype.</p>
         <p>It is designed as a progressive web application, so features a slightly different UI design to my other sites, as well as featuring multiple, 
           built-in applications, such as a <strong>to-do list</strong> which uses <strong>local storage</strong>, a <strong>weather app</strong> which uses <strong>API</strong> and more.
         </p>
-        <button><h2 style="padding: 0;">Moods Website</h2></button>
+        <a href="Moods Site\index.html" target="_blank">
+          <button><h2 style="padding: 0">Moods Website</h2></button></a>
+        <a href="https://projects.invisionapp.com/prototype/Moods-Final-Josh-Taylor-ckja8fedg00adtk01wfk8kmhx/play/e0e468ab" target="_blank">
+          <button><h2 style="padding: 0;">Moods UI Design</h2></button> </a>
 </div>
 
 
-<div style="grid-area: AwarenessText">
+<div class="Flipcard" style="grid-area: MoodsSite" id="MoodsSite">
+  <div class="Inner-Flipcard">
+    <div class="Frontcover">
+  <img src="Images\Moods Mobile.png" class="Mobile" alt="">
+      <img src="Images\Moods Laptop.png" alt="">
+    </div>
+    <div class="Backcover">
+      <iframe class="WebsiteIframes" src="https://projects.invisionapp.com/prototype/Moods-Desktop-ckjfw0nrk00b9n201jb083sjv/play/40cc82ad" title="W3Schools Free Online Web Tutorials"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="WebsiteDescription" id="AwarenessWebsites" style="grid-area: AwarenessText">
         <h2>Awareness Sites</h2>
         <p>These two sites were created as part of my Technology Project (otherwide known as a dissertation) at DMU.</p>
         <p>Overall these sites are relatively basic, using a less JavaScript, but plenty of HTML and CSS to ensure they're fully adaptive to screen size. These sites were combined with <strong>social media campaign</strong>
@@ -190,16 +218,27 @@
         <p>This project was successful in raising awareness and allowed me to focus on ensuring the site was fully functional over creating something with lots of built-in features, although I did have to ensure each site 
           had something extra to make it <strong>stand out</strong>.
         </p>
-<button><h2 style="padding: 0;">Children's Mental Health Site Website</h2></button>
-
-<button><h2 style="padding: 0;">University Mental Health Website</h2></button>
+        <a href="Children Campaign Website\index.html" target="_blank">
+<button><h2 style="padding: 0;">Children's Mental Health Site Website</h2></button></a>
+<a href="Uni Campaign Website\index.html" target="_blank">
+<button><h2 style="padding: 0;">University Mental Health Website</h2></button></a>
 
 </div>
 
+<div class="Flipcard" id="UniSite" style="grid-area: UniSite">
+  <div class="Inner-Flipcard">
+    <div class="Frontcover">
+  <img src="Images\CMHD Mobile.png" class="Mobile" alt="">
+      <img src="Images\UMHD Laptop.png" alt="">
+    </div>
+    <div class="Backcover">
+      <iframe class="WebsiteIframes" src="Uni Campaign Website\index.html" title="W3Schools Free Online Web Tutorials"></iframe>
+    </div>
+  </div>
+</div>
 
-<iframe class="SiteIframes" id="UniSite" style="grid-area: UniSite" src="Uni Campaign Website\index.html" title="W3Schools Free Online Web Tutorials"></iframe>
 
-<div style="grid-area: AdharText">
+<div class="WebstiteDescription" id="AdharWebsite" style="grid-area: AdharText">
         <h2>Adhar Project</h2>
         <p>This site was my first ever freelance project, where I was tasked with re-creating Adhar Project's website.</p>
         <p>Adhar's previous website was extremely outdated and created using an old web-design platform, so I completely coded the site 
@@ -213,25 +252,50 @@
         </p>
 
     
-        
-        <button><h2 style="padding: 0;">Adhar Project Website</h2></button>
+        <a href="Adhar-Website\index.html" target="_blank">
+        <button><h2 style="padding: 0;">Adhar Project Website</h2></button></a>
       </div>
 
-    <iframe class="SiteIframes" id="AdharSite" style="grid-area: AdharSite" src="Adhar-Website\index.html" title="W3Schools Free Online Web Tutorials"></iframe>
-   
-<div style="grid-area: GHText">
+
+      <div class="Flipcard" style="grid-area: AdharSite">
+        <div class="Inner-Flipcard">
+          <div class="Frontcover">
+        <img src="Images\Adhar Mobile.png" class="Mobile" alt="">
+            <img src="Images\Adhar Laptop.png" alt="">
+          </div>
+          <div class="Backcover">
+            <iframe class="WebsiteIframes" id="AdharSite" src="Adhar-Website\index.html" title="W3Schools Free Online Web Tutorials"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      
+<div class="WebsiteDescription" style="grid-area: GHText">
         <h2>Global Heads</h2>
 <p>This was a small, single page website that was produced for Global Heads - a startup company that has the plans of relocating nurses from across the world to UK and US hospitals.
 
 </p>
 <p>As at this stage the site is just to provide information, the site only needed HTML and CSS, but was still a good way for me to learn more about making sites for clients.</p>
-<button><h2 style="padding: 0;">Global Heads Sites</h2></button>     
+
+<a href="Global-Heads\index.html"target="_blank">
+<button><h2 style="padding: 0;">Global Heads Sites</h2></button>     </a>
 </div>
 
-<iframe class="SiteIframes"id="GHSite" style="grid-area: GHSite" src="Global-Heads\index.html" title="W3Schools Free Online Web Tutorials"></iframe>
+<div class="Flipcard" id="GHSite"  style="grid-area: GHSite">
+  <div class="Inner-Flipcard">
+    <div class="Frontcover">
+  <img src="Images\GH Mobile.png" class="Mobile" alt="">
+      <img src="Images\GH Laptop.png" alt="">
+    </div>
+    <div class="Backcover">
+      <iframe class="WebsiteIframes"src="Global-Heads\index.html" title="W3Schools Free Online Web Tutorials"></iframe>
 
+    </div>
+  </div>
+</div>
 
-<div style="grid-area: DegreesText">
+<div class="WebstiteDescription" style="grid-area: DegreesText">
 <h2>67 Degrees</h2>
         <p>This is what I would class as my first website - a coffee shop site created for one of my coursework projects. I got to choose the topic and contents of the site,
           and wanted to test myself to my ability at an early stage of coding.
@@ -239,11 +303,24 @@
         <p>Before this, I had only made sites that would not fit mobiles properly, or that didn't feature anything 
           too complex. However, after this site, I was able to start coding properly and began to understand what you can achieve with HTML, CSS and JavaScript. 
         </p>
-        
-        <button><h2 style="padding: 0;">67 Degree's Website</h2></button>
+        <a href="67-Degrees\index.html" target="_blank">
+        <button><h2 style="padding: 0;">67 Degree's Website</h2></button></a>
       </div>
 
-        <iframe class="SiteIframes" id="DegsSite" style="grid-area: DegSite" src="67-Degrees\Menu.html" title="W3Schools Free Online Web Tutorials"></iframe>
+
+      <div class="Flipcard" style="grid-area: DegSite" id="DegsSite">
+        <div class="Inner-Flipcard">
+          <div class="Frontcover">
+        <img src="Images\Degrees Mobile.png" class="Mobile" alt="">
+            <img src="Images\Degrees Laptop.png" alt="">
+          </div>
+          <div class="Backcover">
+            <iframe class="WebsiteIframes" src="67-Degrees\Menu.html" title="W3Schools Free Online Web Tutorials"></iframe>
+          </div>
+        </div>
+      </div>
+      
+        
             </section>
 
             <section class="SocialMediaWork">
@@ -251,12 +328,19 @@
                 <p>Another module that I've had interest in at DMU is social media - campaigning online for different organisations to either help raise awareness or promote  something.</p>
                 <p>I will often create graphics to post online that are able to achieve this, mostly using Adobe Illustrator to do so.</p>
 
-    <h2>Awareness Campaign</h2>
+    <h2 id="AwarenessMedia">Awareness Campaign</h2>
     <p>Alongside the two websites for <strong>University Mental Health</strong> and <strong>Children's Mental Health</strong>, I performed two social media campaigns to help promote the websites 
     and raise awareness.</p>
 <p>Both campaigns were posted on Adhar Project's social media profiles, as I wanted to make a lasting impact on a charity organisation and give the audiece somewhere to find support. </p>
 <p>For each campaign I created mutliple graphics on Illustrator to post so that I could cover a large amount of content, and ensured to use every feature of the social media sites that were used.</p>    
 
+<div class="SocialMediaImages">
+
+  <img src="Images\University MH Content-12.png" alt="">
+  <img src="Images\Advice 3.png" alt="">
+  <img src="Images\Express Yourself 2.png" alt="">
+  <img src="Images\University MH Content-12.png" alt="">
+</div>
                 <h2>Other Projects</h2>
                 <p>I have also completed other social media work for both university projects and freelance projects.</p>
                 <p>At Uni, I completed a campaign for the DMU Theatre Society, where I took control of their social media accounts to promote their upcoming events.</p>
@@ -283,15 +367,20 @@
                             </section>
         
   <footer>
-
+    <p>Website created by Josh Taylor.</p>
+    <p>Email me at joshsgt2004@gmail.com for any enquiries.</p>
+    
   </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
-    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
-    integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
+  integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
 
-    <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
+  integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+
+  <script src="app.js"></script>
+  
 </body>
 </html>
 

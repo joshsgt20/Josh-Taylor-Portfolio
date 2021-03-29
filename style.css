@@ -3,6 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+.Slider{
+	background: linear-gradient(-45deg, rgb(32, 32, 32), rgb(18, 69, 99), rgb(32, 32, 32), rgb(56, 56, 56));
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 html {
   scroll-behavior: smooth;
@@ -122,6 +139,7 @@ section {
 .MobileMenu .fa{
   margin-left: 5vw;
   font-size: 3rem;
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
 }
 
 .showMenu {
@@ -191,6 +209,8 @@ footer {
 
 .Welcome span {
   color: rgb(53, 179, 252);
+  text-shadow: 0rem 0rem 0.05rem rgb(232, 244, 255);
+  
 }
 
 .Intro_Text {
@@ -210,6 +230,7 @@ footer {
   color: rgb(53, 179, 252);
   text-decoration: none;
   font-size: 1rem;
+  text-shadow: 0rem 0rem 0.04rem rgb(232, 244, 255);
 }
 
 .WelcomeLinks a:hover {
@@ -232,11 +253,13 @@ footer {
   padding: 1vw;
   justify-content: center;
   border: 0.3vh solid rgb(53, 179, 252);
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
 }
 
 .fa:hover {
   background-color: rgb(53, 179, 252);
   transition: 0.3s;
+transform: scale(1.1);
 }
 
 .fa-twitter,
@@ -254,7 +277,6 @@ footer {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background: rgb(32, 32, 32);
   z-index: -4;
   border-bottom: 0.3vh solid rgb(53, 179, 252);
 }
@@ -278,6 +300,11 @@ ul li {
   padding: 0;
 }
 
+
+.Skills img{
+  width: 80%;
+  margin-left: 10%;
+}
 /* My Work Page CSS */
 
 .IntroSection {
@@ -307,6 +334,7 @@ ul li {
 .UIDesign img {
   width: 80%;
   transition: 0.3s;
+  
 }
 
 .LinksImage, .MoodsImage{
@@ -321,11 +349,7 @@ ul li {
   color: white;
 }
 
-.Other {
-}
 
-.Websites {
-}
 
 .ProjectDiv {
   display: flex;
@@ -343,6 +367,7 @@ ul li {
   border-radius: 50%;
   border: 0.1vh solid rgb(32, 32, 32);
   align-items: center;
+  box-shadow: 0rem 0rem 0.5rem rgb(58, 58, 58); 
 }
 
 .Projects button{
@@ -352,16 +377,17 @@ ul li {
     padding: 0.5vh 1vw;
     width: 80%;
     margin-bottom: 1vh;
+    transition: 0.3s;
+    font-size: 1.3rem;
+
 
 }
 
 .Projects button:hover{
     background-color: rgb(53, 179, 252);
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: none;
-}
-.Projects h2 {
-  padding: 1vh 0vw;
+    transform: scale(1.03);
 }
 
 .ProjectImage {
@@ -401,7 +427,8 @@ ul li {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 80%;
-  height: 70%
+  height: 70%;
+  font-size: 1.4rem;
 }
 
 
@@ -412,6 +439,8 @@ ul li {
   padding: 0.5vh 1vw;
   width: 100%;
   margin: 2vh 0vw;
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+  transition: 0.3s;
 
  
 
@@ -424,20 +453,81 @@ ul li {
   padding: 0.5vh 1vw;
   width: 100%;
   margin: 2vh 0vw;
+  box-shadow: 0rem 0rem 0.5rem rgb(58, 58, 58); 
+  transition: 0.3s;
 }
 
 .UIDesign button:hover, .Websites button:hover{
   background-color: rgb(53, 179, 252);
-  transition: 0.2s;
+  transition: 0.3s;
   cursor: none;
+  transform: scale(1.04);
+}
+
+
+.WebsiteIframes{
+  display: none;
+    
+
+}
+
+
+
+.Flipcard {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  margin: 2vh 0vw 2vh 5vw;
+}
+
+
+.Inner-Flipcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.Frontcover {
+  color: black;
+}
+.Frontcover img{
+  width: 70%;
+  align-self: center;
+}
+.Frontcover .Mobile{
+  width: 28%;
+}
+
+.SocialMediaImages{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5vh 0vw 2vh 0vw;
+  flex-wrap: wrap;
+}
+
+.SocialMediaImages img{
+  width: 75%;
+  margin-bottom: 5vh;
+}
+
+  
+.Experience img{
+  width: 75%;
+  margin: 2vh 0% 2vh 12.5%;
 }
 
   /* Contact Page CSS */
   .Contact{
    padding-top: 12vh;
+   min-height: 100vh;
   }
    .Contact .fa {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     text-decoration: none;
     margin-left: 5%;
@@ -446,24 +536,80 @@ ul li {
     padding: 1vw;
     justify-content: center;
     border: 0.3vh solid rgb(32, 32, 32);
+    box-shadow: 0rem 0rem 0.5rem rgb(58, 58, 58);
   }
   
   .Contact .fa:hover {
     background-color: rgb(53, 179, 252);
     transition: 0.3s;
     cursor: none;
+ 
+  transform: scale(1.05);
   }
   
   .Contact_Social_Media{
     justify-content: space-around;
     display: flex;
+    margin: 5vh 0vw 5vh 0vw
     
 
   }
 
   .Contact img{
-    width: 40%;
+    width: 70%;
+    margin: 2vh 0vw 2vh 15%;
   }
+
+  /* Blog Page CSS */
+  .Blog{
+    padding-top: 12vh;
+    min-height: 100vh;
+   }
+
+   .BlogCollection{
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: center;
+   }
+
+   .BlogPost{
+     width: 90%;
+     background-color: rgb(32, 32, 32);
+     color: white;
+     text-align: center;
+     margin: 2vh 0vw;
+     transition: 0.3s;
+     box-shadow: 0rem 0rem 0.3rem rgb(58, 58, 58); 
+   }
+
+
+   .BlogPost:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+   }
+
+   .BlogImage{
+    height: auto;
+    margin: 1% 1%;
+    overflow: hidden;
+    transition: 0.2s
+   }
+   .BlogImage:hover{
+     opacity: 0.8;
+     transition: 0.3s
+   }
+
+   .BlogPost h3{
+     padding: 0vh 1vw 1vh 1vw;
+     font-size: 1.2rem;
+   }
+   .BlogImage img{
+     object-fit: cover;
+     width: 100%;
+     transition: 0.3s;
+
+   }
 
 @media screen and (min-width: 650px) {
   section {
@@ -554,13 +700,32 @@ ul li {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "InterestsText InterestsText"
-      "ZeusText InterestsZeus"
       "CoffeeText InterestsCoffee"
-      "TravellingText InterestsTravel";
+      "TravellingText InterestsTravel"
+      "ZeusText InterestsZeus";
   }
 
   .Skills ul {
     columns: 2;
+  }
+  .Skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "SkillsText SkillsText SkillsText"
+    "List1 List1 PhoneSite"
+    "AdditionalSkills AdditionalSkills AdditionalSkills";
+  }
+
+  .Experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ExperienceText ExperienceImage"
+  
+  }
+
+  .Experience img{
+    width: 95%;
+    margin-left: 5%;
   }
 
   /* My Work Page CSS */
@@ -570,6 +735,10 @@ ul li {
     margin-bottom: 2vh;
   }
 
+
+  .ProjectText, .Projects button{
+    font-size: 1rem;
+  }
   .UIDesign {
     background-color: rgb(32, 32, 32);
     color: white;
@@ -593,17 +762,45 @@ ul li {
     padding: 0vh;
   }
   .UIDesign button, .Websites button{
-    width: 80%;
-    margin-left: 10%
-
-   
+    width: 100%;
   
   }
   
+  .SocialMediaImages{
+    justify-content: space-between;
+
+  }
+  
+  .SocialMediaImages img{
+    width: 45%;
+
+  }
   
   /* Contact Page CSS */
 
+  .Contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ContactText ContactImage"
+    "ContactLinks ContactLinks";
+   }
+
+   .Contact img{
+     width: 95%;
+     margin-left: 5%;
+   }
   /* Blog Page CSS */
+  .BlogCollection{
+    justify-content: space-between;
+  }
+
+  .BlogPost{
+    width: 48%;
+  }
+  .BlogPost h3{
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 1.1rem;
+  }
 }
 
 /* Laptop Screen size */
@@ -674,6 +871,32 @@ ul li {
     font-size: 3.5rem;
   }
 
+  .Skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "SkillsText SkillsText SkillsText"
+    "List1 List1 PhoneSite"
+    "AdditionalSkills AdditionalSkills AdditionalSkills";
+  }
+
+  .Interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "InterestsText InterestsText InterestsText"
+      "CoffeeText CoffeeText InterestsCoffee"
+      "TravellingText TravellingText InterestsTravel"
+      "ZeusText ZeusText InterestsZeus";
+  }
+
+  .Skills img{
+    width: 100%;
+  }
+
+  .Skills ul{
+    columns: 1;
+  }
+
   /* My Work Page CSS */
   .Projects {
     position: relative;
@@ -689,43 +912,159 @@ ul li {
     font-size: 0.8rem;
   }
 
-
   .Websites {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "WebsiteText WebsiteText WebsiteText WebsiteText WebsiteText"
-    "MoodsText MoodsText MoodsText MoodsText MoodsText"
+    "MoodsText MoodsText MoodsText MoodsSite MoodsSite"
     "UniSite UniSite AwarenessText AwarenessText AwarenessText"
     "AdharText AdharText AdharText AdharSite AdharSite"
     "GHSite GHSite GHText GHText GHText"
     "DegreesText DegreesText DegreesText DegSite DegSite";
   }
-  .Websites div, .SiteIframes{
+  
+  .WebsiteDescription {
     margin: 7vh 0vw;
   }
   .Websites button{
     width: 100%;
-    margin: 0
+    margin: 2vh 0vw
   }
 
-  .SiteIframes{
-    width: 95%;
-    height: 90%;
+  .WebsiteIframes{
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-self: center;
+    position: relative;
       
 
   }
   #UniSite, #GHSite{
-    margin-right: 5%;
+    margin: 5vh 1vw 5vh 0vw;
   }
 
-#AdharSite, #DegsSite{
-  margin-left: 5%
+
+
+.Flipcard {
+  position: relative;
+  width: 98%;
+  height: 90%;
+  margin: 5vh 0vw 5vh 1vw;
+  text-align: center;
+  perspective: 50rem;
+  background-color: white;
 }
+
+
+.Inner-Flipcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.Flipcard:hover .Inner-Flipcard {
+  transform: rotateY(180deg);
+}
+
+
+.Frontcover, .Backcover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+
+.Backcover {
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 0;
+  border: 0.3vh solid rgb(32, 32, 32);
+}
+
+.Frontcover img{
+  width: 100%;
+  align-self: center;
+
+}
+
+.Frontcover .Mobile{
+  width: 50%;
+  margin-bottom: 10%;
+  
+}
+
+.SocialMediaImages img{
+  width: 23%;
+
+}
+
+.ProjectText, .Projects button{
+  font-size: 0.8rem;
+}
+
   /* Contact Page CSS */
+  .Contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ContactText ContactImage"
+    "ContactLinks ContactImage";
+   }
 
   /* Blog Page CSS */
+
+  .BlogCollection{
+    justify-content: space-around;
+  }
+  .BlogPost{
+    width: 38%;
+  }
+  .BlogPost h3{
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 1.4rem;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .Frontcover {
+    display: flex;
+      
+    }
+    
+
+    .Frontcover img{
+      width: 100%;
+      align-self: center;
+    
+    }
+    
+    .Frontcover .Mobile{
+      display: none
+      
+    }
+
+    .Experience{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "ExperienceText ExperienceImage"
+    
+    }
+  
+    .Experience img{
+      width: 95%;
+      margin-left: 5%;
+    }
+    
+    .ProjectText, .Projects button{
+      font-size: 1.1rem;
+    }
 }
 
 /* Desktop Screen size */
@@ -794,7 +1133,24 @@ ul li {
   .Projects, .Projects button{
     font-size: 1.3rem;
   }
+
+  .Frontcover {
+    display: flex;
+    
+  }
+
+
+  
+
+
   /* Contact Page CSS */
 
   /* Blog Page CSS */
+  .BlogCollection{
+    justify-content: space-between;
+  }
+  .BlogPost{
+    margin: 10vh 0vw 10vh 0vw;
+    width: 24%;
+  }
 }

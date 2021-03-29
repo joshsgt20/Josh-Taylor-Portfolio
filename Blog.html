@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Taylor Portfolio - WebHead</title>
+    <title>Josh Taylor- WebHead Blog</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,20 +29,23 @@
         </ul>
         <div class="Hamburger" onclick="AnimateMenu(this)">
             <span class="menuIcon material-icons">
-    
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-            
             </span>
         
         </div>
+
         <ul class="MobileMenu">
             <li><a class="MobileMenuLink" href="index.html">Home</a></li>
             <li><a class="MobileMenuLink" href="My_Work.html">My Work</a></li>
             <li><a class="MobileMenuLink" href="Contact.html">Contact</a></li>
             <li><a class="MobileMenuLink" href="Blog.html">Blog</a></li>
-          </ul>
+            <br>
+            <li><a href="https://twitter.com/thewebheadjt" target="_blank" class="fa fa-twitter"></a></li><br>
+            <li><a href="https://www.linkedin.com/in/josh-taylor-7b96b11ba/" target="_blank" class="fa fa-linkedin"></a></li><br>
+            <li><a href="https://www.instagram.com/thewebheadjt/" target="_blank" class="fa fa-instagram"></a></li>
+        </ul>
     
     </nav>
 
@@ -50,14 +54,60 @@
     </header>
 
 
-    <section>
+    <section class="Blog">
+<h1>Want to see more? Check out my blog!</h1>
+<p>The name "WebHead" originated when I created a Wordpress blog in 2019, which I used for a university assignment to 
+    improve my knowledge and show my interest in the topic of digital design.
+</p>
 
+<p>Writing is something that I've always had an interest in, and I plan to now continue to develop new posts on this blog as I 
+    start to progress in a job where I can truly start to use everything I've learnt.
+</p>
+
+<p><a href="https://webheadinformation.home.blog/" target="_blank"><strong>Click here</strong></a> to check out my blog!</p>
+
+<div class="BlogCollection">
+
+    <div class="BlogPost" id="BlogPost1">
+        <a href="https://webheadinformation.home.blog/2020/01/17/the-steps-to-build-your-first-website/" target="_blank">
+        <div class="BlogImage">
+            <img src="Images\Blog Image 3.png" alt="">
+        </div></a>
+        <h3>Building your first website</h3>
+    </div>
+
+    <div class="BlogPost"  id="BlogPost2">
+        <a href="https://webheadinformation.home.blog/2019/12/31/10-important-things-to-remember-when-making-a-website/" target="_blank">
+        <div class="BlogImage">
+            <img src="Images\Blog Image 4.jpg" alt="">
+        </div></a>
+        <h3>10 things to remember when making a website</h3>
+    </div>
+    <div class="BlogPost"  id="BlogPost3">
+        <a href="https://webheadinformation.home.blog/2020/01/02/the-trends-of-social-media/" target="_blank">
+        <div class="BlogImage">
+            <img src="Images\Blog Image 2.jpg" alt="">
+        </div></a>
+        <h3>Trends of social media</h3>
+    </div>
+    <div class="BlogPost"  id="BlogPost4">
+        <a href="https://webheadinformation.home.blog/2019/10/24/welcome-to-my-blog/" target="_blank">
+        <div class="BlogImage">
+            <img src="Images\Blog Image 1.jpeg" alt="">
+        </div></a>
+        <h3>Welcome to WebHead</h3>
+    </div>
+</div>
         
     </section>
 
   <footer>
-
+    <p>Website created by Josh Taylor.</p>
+    <p>Email me at joshsgt2004@gmail.com for any enquiries.</p>
+    
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
     integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
 
