@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8" /> 
+    <title>My Page</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head> 
+<body> 
+    <div> 
+        <h1> 
+            Lorem ipsum dolor sit amet. 
+        </h1> 
+        <p class="small"> 
+            Cras consequat justo at urna mattis laoreet. Donec vel mollis nunc. 
+        </p> 
+        <ol class="small"> 
+            <li>Badger</li> 
+            <li>Crow</li> 
+            <li>Fox</li> 
+            <li>Sheep</li> 
+        </ol> 
+        <div> 
+            <form> 
+                <label for="firstname"> 
+                    First Name 
+                </label> 
+                <input type="text" id="firstname" name="firstname" value="" /> 
+                <label for="age"> 
+                    Age 
+                </label> 
+                <input type="text" id="age" name="age" value="" /> 
+                <button id="update-output">Update Name</button> 
+            </form> 
+            <p>Your Name: <span id="output"></span></p> 
+        </div> 
+    </div> 
+
+
+    <script> 
+    $(document).ready(function() {
+            $("button").click(function() {
+                var x = $("form").serializeArray();
+                $.each(x, function(field) {
+                    $("#output").append(firstname);
+                });
+            });
+        });
+    </script> 
+
+    <style>
+      .small{
+        color: red;
+      }
+    </style>
+</body> 
+</html> 

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hip Hop Vinyls</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fzk2bzs.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<header>
+<nav>
+    <h1 id="Title"><span>Hip Hop</span> Vinyls</h1>
+
+    <ul>
+      <li class="nav-links"><a href="index.html">Home</a></li>
+      <li class="nav-links"><a href="Products.html">Products</a></li>
+  
+      <li class="snipcart-checkout nav-links"><a>Checkout</a></li>
+<li class="snipcart-customer-signin nav-links"><a>Account</a></li>
+<li><span class="snipcart-items-count"></span>
+  <span class="snipcart-total-price"></span></li>
+  </ul>
+
+    <div class="Hamburger" onclick="AnimateMenu(this)">
+      <span class="menuIcon material-icons">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+      </span>
+  
+  </div>
+
+
+
+</nav>
+
+<ul class="MobileMenu">
+  <li><a class="MobileMenuLink" href="index.html">Home</a></li>
+  <li><a class="MobileMenuLink" href="Products.html">Products</a></li>
+
+  <li class="snipcart-checkout MobileMenuLink"><a>Checkout</a></li>
+<li class="snipcart-customer-signin MobileMenuLink"><a>Account</a></li>
+
+
+</ul>
+</header>
+
+<body>
+
+
+
+
+
+<section class="Top">
+
+  <h1 style="text-align: center;">Latest Releases</h1>
+  <input type="text" id="Searchbar" onkeyup="SearchTitle()" placeholder="Search for products..." title="Type in a name">
+
+
+
+  <button id="DisplayFilters"><p>Filter Artists</p></button>
+
+  <div id="FilterProducts">
+    <div class="ButtonContainer">
+    <button class="btn active" onclick="FilterProducts('all')"><p>Show all</p></button>
+    <button class="btn" onclick="FilterProducts('Logic')"><p>Logic</p></button>
+    <button class="btn" onclick="FilterProducts('JCole')"><p>J.Cole</p></button>
+    <button class="btn" onclick="FilterProducts('Travis')"><p>Travis Scott</p></button>
+    <button class="btn" onclick="FilterProducts('Tyler')"><p>Tyler, The Creator</p></button>
+    <button class="btn" onclick="FilterProducts('Isaiah')"><p>Isaiah Rashad</p></button>
+    <button class="btn" onclick="FilterProducts('Joey')"><p>Joey Bada$$</p></button>
+    <button class="btn" onclick="FilterProducts('JID')"><p>JID</p></button>
+    <button class="btn" onclick="FilterProducts('Cordae')"><p>Cordae</p></button>
+    <button class="btn" onclick="FilterProducts('Savage')"><p>21 Savage</p></button>
+    <button class="btn" onclick="FilterProducts('Jackboys')"><p>JackBoys</p></button>
+    <button class="btn" onclick="FilterProducts('Kendrick')"><p>Kendrick Lamar</p></button>
+    <button class="btn" onclick="FilterProducts('Tribe')"><p>Tribe Called Quest</p></button>
+    <button class="btn" onclick="FilterProducts('Spillage')"><p>Spillage Village</p></button>
+    <button class="btn" onclick="FilterProducts('Dreamville')"><p>Dreamville</p></button>
+  </div>
+  </div>
+  
+  <div class="Main">
+  <div id="Products">
+
+
+
+    <div class="Card filterDiv JCole">
+      <div class="Product">
+        <img src="Images\4YEO.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>4 Your Eyez Only</h3>
+          <h3>J.Cole</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="4 Your Eyez Only"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="J.Cole Vinyl - 4 Your Eyez Only"
+      data-item-image="Images\4YEO.jpg"
+      data-item-name="J.Cole Vinyl - 4 Your Eyez Only"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Savage">
+      <div class="Product">
+        <img src="Images\21savage.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>I am > I Was</h3>
+          <h3>21 Savage</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="I am > I Was"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="21 Savage - I Am > I Was"
+      data-item-image="Images\21savage.jpg"
+      data-item-name="21 Savage - I Am > I Was"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Joey">
+      <div class="Product">
+        <img src="Images\1999.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>1999</h3>
+          <h3>Joey Bada$$</h3></a>
+      </div>
+      <p>£14.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="1999"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Joey Bada$$ - 1999"
+      data-item-image="Images\1999.jpg"
+      data-item-name="Joey Bada$$ - 1999"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Travis">
+      <div class="Product">
+        <img src="Images\Astro.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Astroworld</h3>
+          <h3>Travis Scott</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Astroworld"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Travis Scott - Astroworld"
+      data-item-image="Images\Astro.webp"
+      data-item-name="Travis Scott - Astroworld"><p>Add to Basket</p></button>
+    </div>
+
+    <div class="Card filterDiv Logic">
+      <div class="Product">
+        <img src="Images\bt3.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Bobby Tarantino 3</h3>
+          <h3>Logic</h3></a>
+
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Bobby Tarantino 3"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Logic - Bobby Tarantino 3"
+      data-item-image="Images\bt3.jpg"
+      data-item-name="Logic - Bobby Tarantino 3"><p>Add to Basket</p></button>
+    </div>
+
+    
+
+    <div class="Card filterDiv Tyler">
+      <div class="Product">
+        <img src="Images\CMIFYGL.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Call Me If You Get Lost</h3>
+          <h3>Tyler, The Creator</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Call Me If You Get Lost"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Tyler, The Creator - Call Me If You Get Lost"
+      data-item-image="Images\CMIFYGL.jpg"
+      data-item-name="Tyler, The Creator - Call Me If You Get Lost"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Logic">
+      <div class="Product">
+        <img src="Images\COADM.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>COADM</h3>
+          <h3>Logic</h3></a>
+      </div>
+      <p>£16.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Confessions of a Dangerous Mind"
+      data-item-price="16.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Logic - Confessions of a Dangerous Mind"
+      data-item-image="Images\COADM.jpg"
+      data-item-name="Logic - Confessions of a Dangerous Mind"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Tyler">
+      <div class="Product">
+        <img src="Images\IGOR.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>IGOR</h3>
+          <h3>Tyler, The Creator</h3></a>
+      </div>
+      <p>£18.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="IGOR"
+      data-item-price="18.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Tyler, The Creator - IGOR"
+      data-item-image="Images\CMIFYGL.jpg"
+      data-item-name="Tyler, The Creator - IGOR"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Jackboys">
+      <div class="Product">
+        <img src="Images\jackboys.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>JackBoys</h3>
+          <h3>Jackboys</h3></a>
+      </div>
+      <p>£14.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Jackboys"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Jackboys"
+      data-item-image="Images\jackboys.jpg"
+      data-item-name="Jackboys - Jackboys"><p>Add to Basket</p></button>
+    </div>
+
+    <div class="Card filterDiv JID">
+      <div class="Product">
+        <img src="Images\JID.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>The Never Story</h3>
+          <h3>JID</h3></a>
+      </div>
+      <p>£16.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="The Never Story"
+      data-item-price="16.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="JID - The Never Story"
+      data-item-image="Images\JID.jpg"
+      data-item-name="JID - The Never Story"><p>Add to Basket</p></button>
+    </div>
+
+    
+
+    <div class="Card filterDiv JID">
+      <div class="Product">
+        <img src="Images\JID2.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Dicaprio 2</h3>
+          <h3>JID</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Dicaprio 2"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="JID - Dicaprio 2"
+      data-item-image="Images\JID2.jpg"
+      data-item-name="JID - Dicaprio 2"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv JCole">
+      <div class="Product">
+        <img src="Images\KOD.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>KOD</h3>
+          <h3>J.Cole</h3></a>
+      </div>
+      <p>£16.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="KOD"
+      data-item-price="16.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="J.Cole - KOD"
+      data-item-image="Images\KOD.webp"
+      data-item-name="J.Cole - KOD"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Cordae">
+      <div class="Product">
+        <img src="Images\Lostboy.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>The Lost Boy</h3>
+          <h3>Cordae</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="The Lost Boy"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Cordae - The Lost Boy"
+      data-item-image="Images\Lostboy.jpg"
+      data-item-name="Cordae - The Lost Boy"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Kendrick">
+      <div class="Product">
+        <img src="Images\MaadCity.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Good Kid, M.a.a.d City</h3>
+          <h3>Kendrick Lamar</h3></a>
+      </div>
+      <p>£16.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Good Kid, M.a.a.D City"
+      data-item-price="16.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Kendrick Lamar - Good Kid, M.a.a.D City"
+      data-item-image="Images\JID.jpg"
+      data-item-name="Kendrick Lamar - Good Kid, M.a.a.D City"><p>Add to Basket</p></button>
+    </div>
+
+    <div class="Card filterDiv Logic">
+      <div class="Product">
+        <img src="Images\NoPressure.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>No Pressure</h3>
+          <h3>Logic</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="No Pressure"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Logic - No Pressure"
+      data-item-image="Images\NoPressure.webp"
+      data-item-name="Logic - No Pressure"><p>Add to Basket</p></button>
+    </div>
+
+    
+
+    <div class="Card filterDiv JCole">
+      <div class="Product">
+        <img src="Images\Off_Season.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>The Off Season</h3>
+          <h3>J.Cole</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="The Off Season"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="J.Cole - The Off Season"
+      data-item-image="Images\Off_Season.jpg"
+      data-item-name="J.Cole - The Off Season"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Dreamville">
+      <div class="Product">
+        <img src="Images\Revenge.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Revenge of the Dreamers 3</h3>
+          <h3>Dreamville</h3></a>
+      </div>
+      <p>£19.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Revenge of the Dreamers 3"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Dreamers - Revenge of the Dreamers 3"
+      data-item-image="Images\Revenge.webp"
+      data-item-name="Dreamville - Revenge of the Dreamers 3"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Travis">
+      <div class="Product">
+        <img src="Images\Rodeo.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Rodeo</h3>
+          <h3>Travis Scott</h3></a>
+      </div>
+      <p>£14.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Rodeo"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Travis Scott - Rodeo"
+      data-item-image="Images\Rodeo.jpg"
+      data-item-name="Travis Scott - Rodeo"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Savage">
+      <div class="Product">
+        <img src="Images\savage mode.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Savage Mode 2</h3>
+          <h3>21 Savage</h3></a>
+      </div>
+      <p>£19.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Savage Mode 2"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="21 Savage - Savage Mode 2"
+      data-item-image="Images\savage mode.jpg"
+      data-item-name="21 Savage - Savage Mode 2"><p>Add to Basket</p></button>
+    </div>
+
+    <div class="Card filterDiv Tribe">
+      <div class="Product">
+        <img src="Images\Tribe.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Midnight Marauders</h3>
+          <h3>A Tribe Called Quest</h3></a>
+      </div>
+      <p>£14.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Midnight Marauders"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="A Tribe Called Quest - Midnight Marauders"
+      data-item-image="Images\Tribe.jpg"
+      data-item-name="A Tribe Called Quest - Midnight Marauders"><p>Add to Basket</p></button>
+    </div>
+
+    
+
+    <div class="Card filterDiv Spillage">
+      <div class="Product">
+        <img src="Images\Spill.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Spilligion</h3>
+          <h3>Spillage Village</h3></a>
+      </div>
+      <p>£14.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Spilligion"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Spillage Village - Spilligion"
+      data-item-image="Images\Spill.webp"
+      data-item-name="Spillage Village - Spilligion"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Isaiah">
+      <div class="Product">
+        <img src="Images\THIB.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>The House is Burning</h3>
+          <h3>Isaiah Rashad</h3></a>
+      </div>
+      <p>£19.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="The House is Burning"
+      data-item-price="19.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Isaiah Rashad - The House is Burning"
+      data-item-image="Images\THIB.jpg"
+      data-item-name="Isaiah Rashad - The House is Burning"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Logic">
+      <div class="Product">
+        <img src="Images\TITS.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Incredible True Story</h3>
+          <h3>Logic</h3></a>
+      </div>
+      <p>£16.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="The Incredible True Story"
+      data-item-price="16.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Logic - The Incredible True Story"
+      data-item-image="Images\TITS.webp"
+      data-item-name="Logic - The Incredible True Story"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Travis">
+      <div class="Product">
+        <img src="Images\Travi.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Birds in the Trap</h3>
+          <h3>Travis Scott</h3></a>
+      </div>
+      <p>£16.99</p>
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Birds in the Trap"
+      data-item-price="16.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Travis Scott - Birds in the Trap"
+      data-item-image="Images\Travi.jpg"
+      data-item-name="Travis Scott - Birds in the Trap"><p>Add to Basket</p></button>
+    </div>
+
+    <div class="Card filterDiv Isaiah">
+      <div class="Product">
+        <img src="Images\TST.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>The Sun's Tirade</h3>
+          <h3>Isaiah Rashad</h3></a>
+      </div>
+      <p>£14.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="The Sun's Tirade"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Isaiah Rashad - The Sun's Tirade"
+      data-item-image="Images\TST.jpg"
+      data-item-name="Isaiah Rashad - The Sun's Tirade"><p>Add to Basket</p></button>
+    </div>
+
+    <div class="Card filterDiv Tribe">
+      <div class="Product">
+        <img src="Images\Tribe2.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Paths of Rhythm</h3>
+          <h3>A Tribe Called Quest</h3></a>
+      </div>
+      <p>£14.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Paths of Rhythm"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="A Tribe Called Quest - Paths of Rhythm"
+      data-item-image="Images\Tribe2.webp"
+      data-item-name="A Tribe Called Quest - Paths of Rhythm"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Logic">
+      <div class="Product">
+        <img src="Images\UnderPressure.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Under Pressure</h3>
+          <h3>Logic</h3></a>
+      </div>
+      <p>£16.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Under Pressure"
+      data-item-price="16.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Logic - Under Pressure"
+      data-item-image="Images\UnderPressure.webp"
+      data-item-name="Logic - Under Pressure"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Logic">
+      <div class="Product">
+        <img src="Images\YSIV.webp" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>YSIV</h3>
+          <h3>Logic</h3></a>
+      </div>
+      <p>£14.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="YSIV"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Logic - YSIV"
+      data-item-image="Images\YSIV.webp"
+      data-item-name="Logic - YSIV"><p>Add to Basket</p></button>
+    </div>
+  
+    <div class="Card filterDiv Saba">
+      <div class="Product">
+        <img src="Images\Saba.jpg" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Care for Me</h3>
+          <h3>Saba</h3></a>
+      </div>
+      <p>£18.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Care for Me"
+      data-item-price="18.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Saba - Care for Me"
+      data-item-image="Images\Rodeo.jpg"
+      data-item-name="Saba - Care for Me"><p>Add to Basket</p></button>
+    </div>
+
+    <div class="Card filterDiv Amine">
+      <div class="Product">
+        <img src="Images\limbo.png" alt="">
+      </div>
+      <div class="Info">
+        <a>
+          <h3>Limbo</h3>
+          <h3>Amine</h3></a>
+      </div>
+      <p>£14.99</p>
+
+      <button class="Purchase snipcart-add-item"
+      data-item-id="Limbo"
+      data-item-price="14.99"
+      data-item-url="http://thewebhead.co.uk/Eccomerce/Products.html"
+      data-item-description="Amine - Limbo"
+      data-item-image="Images\limbo.png"
+      data-item-name="Amine - Limbo"><p>Add to Basket</p></button>
+    </div>
+
+  </div>
+    
+  </div>
+  
+</section>
+
+
+<footer>
+  <p>JT Portfolio - Eccomerce Store Example</p>
+<p>Contact me for more information at <a href="joshsgt2004@gmail.com">joshsgt2004@gmail.com</a></p>
+
+</footer>
+</body>
+<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
+<div id="snipcart" data-config-modal-style="side" data-api-key="ZWE3MzQwNDctOTY4MS00ZWYyLWEzZWMtMjU2OTgwZmYwNTk3NjM3NDgzODAwNzk5Mzk4Nzkx" hidden></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src="app.js"></script>
+<script src="filter.js"></script>
+</html>

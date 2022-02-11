@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f6f6;
+    font-family: 'Poppins';
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    align-items: center;
+    padding: 1vh 7vw;
+    border-bottom: 0.3vh solid rgb(53, 179, 252);
+    position: fixed;
+    z-index: 100;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: white
+}
+footer{
+    background-color: rgb(51, 51, 51);
+    align-items: center;
+    color: white;
+    padding: 1vh 10vw;
+    border-top: solid 0.3vh rgb(83, 235, 255);
+}
+
+footer a{
+    color: #f6f6f6;
+}
+
+#Title{
+    width: 70%;
+    color: white;
+    font-size: 1.8rem;
+    
+}
+
+nav ul{
+    display: none;
+    align-items: center;
+}
+
+
+span{
+    color:rgb(53, 179, 252)
+}
+
+section{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6vh 8vw;
+    margin: auto;
+    background-attachment: fixed;
+    object-fit: cover;
+    color: black;
+}
+
+.Top{
+  padding-top: 12vh;
+}
+
+
+      h1 {
+        font-size: 1.6rem;
+      }
+      
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      h3{
+        font-size: 1rem;
+      }
+      
+      p, #Searchbar {
+        font-size: .9em;
+      
+      }
+      
+  
+
+      .Hamburger {
+        position: relative;
+        z-index: 10;
+        top: 0%;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        left: 10%;
+      }
+      
+      .MobileMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgb(29, 29, 29);
+        color: white;
+        transform: translateX(-100%);
+        transition: transform 0.2s;
+        list-style: none;
+        padding-top: 7rem;
+        transition: 1s;
+        opacity: 0.95;
+        z-index: 9;
+      }
+      
+      .MobileMenu .fa{
+        margin-left: 5vw;
+        font-size: 3rem;
+        box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+      }
+      
+      .showMenu {
+        transform: translateY(0);
+      }
+      
+      li {
+        padding: 1rem 1rem;
+      }
+      
+      .MobileMenuLink {
+        display: inline;
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+        margin-left: 5vw;
+      }
+      
+      .MobileMenuLink:hover {
+        color: rgb(53, 179, 252);
+        transition: 0.3s;
+      }
+      
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      
+      .change .bar2 {
+        opacity: 0;
+      }
+      
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    
+      
+      .Main{
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .slideshow{
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .slide1, .slide2, .slide3{
+        padding: 20vh 2vw 4vh 2vw ;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1vh solid rgb(51, 51, 51);
+        flex-direction: column;
+    }
+
+    .slideshow img{
+      width: 70%;
+    }
+    .slide2 h1{
+      color:rgb(219, 217, 54)
+    }
+    
+.slide h1, .slide2 h1, .slide3 h1{
+      margin: 2vh 0 2vh 0;
+    }
+
+    .slide1{
+      background-image:linear-gradient(to right, rgb(218, 181, 144), rgba(228,207,186));
+
+    }
+    .slide2{
+        background-image:linear-gradient(to right, rgba(189,47,46), rgb(121, 22, 22));
+    }
+    
+    .slide3{
+        background-image:linear-gradient(to right, rgba(245,245,243), rgb(229, 250, 250));
+        ; 
+        
+    }
+  
+    .mySlides {display:none;}
+    
+    
+    
+    .filterDiv {
+        display: none;
+        
+      }
+      
+      .show {
+        display: flex;
+      }
+    
+      .Features{
+          display: flex;
+          background-color: rgb(51, 51, 51);
+          color: white;
+          margin: 0;
+          justify-content: space-evenly;
+          padding: 5vh 4vw;
+          flex-direction: column;
+      }
+    
+      .Features div{
+          width: 80%;
+          text-align: center;
+          margin: 0 2vw 0 2vw
+          
+      }
+
+      .Middle{
+        border-top: solid 0.3vh rgb(53, 179, 252);
+        border-bottom: solid 0.3vh rgb(53, 179, 252);
+        margin: 2vh 0vw 2vh 0vw;
+        padding: 2vh 2vw 2vh 2vw;
+  
+    
+  
+      }
+
+      #DisplayFilters{
+        outline: none;
+        color: white;
+        padding: 1vh 10vw;
+        background-color: rgb(51, 51, 51);
+        cursor: pointer;
+        width: 50%;
+        margin: 3vh 25%;
+        border: solid 0.2vw rgb(51, 51, 51);
+        transition: 0.2s;
+      }
+
+      #DisplayFilters:hover{
+        background-color: rgb(124, 124, 124);
+        transition: 0.2s;
+
+      }
+      
+      #FilterProducts{
+          display: none;
+          width: 100%;
+      }
+      
+      .ButtonContainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+
+      }
+      .btn {
+        background-color: white;
+        cursor: pointer;
+        border: solid 0.2vh rgb(51, 51, 51);
+        transition: 0.2s;
+        width: 28%;
+        margin: .5vh 0;
+        padding: .5vh;
+        
+      }
+
+      .slidebtn{
+        outline: none;
+        color: white;
+        padding: 1vh 10vw;
+        background-color: rgb(51, 51, 51);
+        cursor: pointer;
+        border: solid 0.2vw rgb(51, 51, 51);
+        transition: 0.2s;
+        margin: 3vh 0;
+
+      }
+
+      .slidebtn a{
+        text-decoration: none;
+        color: white;
+  
+      }
+
+      .slidebtn:hover{
+        transform: scale(1.03);
+        background-color: rgb(51, 51, 51);
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.2);
+      }
+      
+      .btn:hover {
+        background-color: rgb(51, 51, 51);
+        color: white;
+        transition: 0.2s;
+      }
+      
+      .btn.active {
+        background-color: rgb(51, 51, 51);
+        color: white;
+      }
+      
+      
+    
+      
+      
+      .Card{
+          width: 80%;
+          box-shadow: 0 10px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.2);
+          border-radius: 2rem;
+          padding: 1rem 1rem;
+          flex-direction: column;
+          margin: 3vh;
+          transition: 0.2s;
+      
+      
+      }
+    
+      .Card:hover{
+          transform: scale(1.04);
+          transition: 0.2s;
+          box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 40px rgba(0,0,0,0.2);
+      }
+      
+      .Product{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease-out;
+      
+      }
+      .Product img{
+          width: 100%;
+          z-index: 2;
+          transition: all 0.5s ease-out;
+      }
+      
+
+      
+      .Info{
+        min-height: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1vh 0;
+      }
+      .Purchase{
+          width: 100%;
+          padding: .8rem 0rem; 
+          background: rgb(51, 51, 51);
+          border: none;
+          color: white;
+          cursor: pointer;
+          border-radius: 5rem;
+          font-weight: bolder;
+          border: solid 0.2vw rgb(51, 51, 51);
+          transition: 0.2s;
+      }
+
+      .Purchase:hover{
+        box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 40px rgba(0,0,0,0.2);
+        background-color: rgb(124, 124, 124);
+        transition: 0.2s;    
+      }
+      
+          
+      #Searchbar {
+          background-color: white;
+          width: 100%;
+          border: 0.2vh solid rgb(51, 51, 51); 
+          margin: 3vh 0 3vh 0; 
+          padding: 2vh 2vw;
+        }
+        
+      
+        #Products{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        
+
+      @media screen and (min-width: 650px) {
+
+        nav{
+          padding: 2vh 7vw;
+          font-size: 1rem;
+  
+      }
+
+
+        #Title{
+            width: 40%;
+            font-size: 1.7rem;        
+        }
+        section {
+          padding: 8vh 10vw;
+        }
+        .MobileMenu,
+        .Hamburger {
+          display: none;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            color: rgb(218, 218, 218);
+            display: flex;
+        }
+        
+        nav li{
+            padding: 1% 5%
+        
+        }
+    
+      
+        .nav-links a:hover {
+          color: rgb(53, 179, 252);
+          transition: 0.3s;
+          cursor: pointer;
+        }
+      
+
+      
+        h1 {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      
+        h2 {
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      
+        h3{
+          font-size: 1.2rem;
+        }
+        p{
+          font-size: 1rem;
+          padding-bottom: 2%;
+        }
+
+      #Searchbar {
+          font-size: 1rem;
+        }
+      
+
+        .Card{
+          width: 42%;
+          margin: 1vh;
+      }
+
+      .Features{
+        display: flex;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        margin: 0;
+        justify-content: space-evenly;
+        padding: 5vh 2vw;
+        flex-direction: row;
+    }
+  
+      .Middle{
+        border-left: solid 0.3vh rgb(53, 179, 252);
+        border-right: solid 0.3vh rgb(53, 179, 252);
+        border-bottom: none;
+        border-top: none;
+  
+      }
+
+      }
+      
+      /* Laptop Screen size */
+      @media screen and (min-width: 1000px) {
+      
+        #Title {
+          font-size: 2.5rem;
+        }
+      
+        h1 {
+          font-size: 1.8em;
+          font-weight: 600;
+        }
+      
+        h2 {
+          font-size: 1.6em;
+          font-weight: 600;
+        }
+      
+        h3{
+          font-size: 1.3rem;
+        }
+        p, #Searchbar {
+          font-size: 1.2em;
+        }
+  
+        nav{
+    
+          font-size: 1.4rem;
+  
+      }
+
+        section {
+          padding: 8vh 8vw;
+      
+        }
+      
+  
+   
+      .btn {
+        width: 23%;
+  
+        
+      }
+
+
+      .slide1, .slide2, .slide3{
+        padding: 12vh 2vw 4vh 2vw ;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1vh solid rgb(51, 51, 51);
+        flex-direction: row;
+    }
+
+    .slideshow img{
+      width: auto;
+      height: 60vh;
+    }
+
+      
+ 
+      }
+      
+      @media screen and (min-width: 1200px) {
+
+
+        .Top{
+          padding-top: 16vh;
+
+        }
+
+        .Card{
+          width: 30%;
+        }
+
+        .btn {
+          width: 19%;
+
+          
+        }
+
+      }
+      
+    
+      /* Desktop Screen size */
+      @media screen and (min-width: 1650px) {
+        section {
+          padding: 8vh 15vw;
+        }
+        
+        nav {
+          padding: 0vh 10vw;
+        }
+
+        .Top{
+          padding-top: 14vh;
+
+        }
+
+        #Title {
+          font-size: 3rem;
+        }
+      
+        h1 {
+          font-size: 2em;
+          font-weight: 600;
+        }
+      
+        h2 {
+          font-size: 1.8em;
+          font-weight: 600;
+        }
+      
+        h3{
+          font-size: 1.5rem;
+        }
+        p, #Searchbar {
+          font-size: 1.3em;
+        }
+      
+        .Card{
+          width: 22%;
+          margin: 2vh;
+      }
+
+      
+      .btn {
+        width: 19%;
+        margin: .5vh 0;
+        padding: 0vh;
+        
+      }
+
+      }
+      

@@ -161,6 +161,7 @@ li {
 .MobileMenuLink:hover {
   color: rgb(53, 179, 252);
   transition: 0.3s;
+  cursor: none;
 }
 
 .bar1,
@@ -213,30 +214,38 @@ footer {
   
 }
 
-.Intro_Text {
+span{
+  color: rgb(53, 179, 252);
+
+}
+
+.Intro_Text p {
+  font-size: 1.3rem;
   color: white;
   z-index: 2;
 }
-.Intro_Text p {
-  font-size: 1rem;
-}
 .WelcomeLinks {
+  margin-top: 3vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 17vh;
+
 }
 
 .WelcomeLinks a {
   color: rgb(53, 179, 252);
   text-decoration: none;
-  font-size: 1rem;
-  text-shadow: 0rem 0rem 0.04rem rgb(232, 244, 255);
+  font-size: 1.3rem;
+  text-shadow: 0rem 0rem 0.04rem rgb(232, 244, 255);  
 }
 
 .WelcomeLinks a:hover {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  cursor: none;
+
 }
 
 .SocialMedia {
@@ -244,22 +253,24 @@ footer {
 }
 
 .SocialMedia .fa {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   text-decoration: none;
   margin-left: 5%;
   background: transparent;
   color: white;
-  padding: 1vw;
+  padding: 1.2vw;
   justify-content: center;
   border: 0.3vh solid rgb(53, 179, 252);
   box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+  margin-top: 3vh;
 }
 
 .fa:hover {
   background-color: rgb(53, 179, 252);
   transition: 0.3s;
 transform: scale(1.1);
+cursor: none;
 }
 
 .fa-twitter,
@@ -287,8 +298,8 @@ transform: scale(1.1);
 }
 
 .AboutMe img {
-  width: 80%;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .Interests img {
@@ -395,6 +406,7 @@ ul li {
   width: 98%;
   height: auto;
   margin: 1% 1%;
+  
 }
 
 .overlay {
@@ -428,9 +440,13 @@ ul li {
   text-align: center;
   width: 80%;
   height: 70%;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
+.Projects button{
+  font-size: 1rem;
+
+}
 
 .UIDesign button{
   color: white;
@@ -465,11 +481,7 @@ ul li {
 }
 
 
-.WebsiteIframes{
-  display: none;
-    
 
-}
 
 
 
@@ -478,6 +490,7 @@ ul li {
   width: 90%;
   text-align: center;
   margin: 2vh 0vw 2vh 5vw;
+  
 }
 
 
@@ -488,6 +501,7 @@ ul li {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  
 }
 
 
@@ -501,6 +515,9 @@ ul li {
 .Frontcover .Mobile{
   width: 28%;
 }
+.Backcover img{
+  display: none;
+  }
 
 .SocialMediaImages{
   display: flex;
@@ -525,32 +542,34 @@ ul li {
   .Contact{
    padding-top: 12vh;
    min-height: 100vh;
+  
   }
    .Contact .fa {
     font-size: 3.5rem;
     text-align: center;
     text-decoration: none;
-    margin-left: 5%;
     background: rgb(32, 32, 32);
     color: white;
     padding: 1vw;
     justify-content: center;
     border: 0.3vh solid rgb(32, 32, 32);
     box-shadow: 0rem 0rem 0.5rem rgb(58, 58, 58);
+    
+
   }
   
   .Contact .fa:hover {
     background-color: rgb(53, 179, 252);
     transition: 0.3s;
     cursor: none;
- 
-  transform: scale(1.05);
+    transform: scale(1.05);
   }
   
   .Contact_Social_Media{
     justify-content: space-around;
     display: flex;
-    margin: 5vh 0vw 5vh 0vw
+    margin: 5vh 5vw 5vh 0vw;
+   
     
 
   }
@@ -838,7 +857,7 @@ ul li {
     display: grid;
     padding: 10vh 6vw;
     align-items: center;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.8fr 1fr;
     grid-template-areas:
       "WelcomeText Links"
       "IntroText SocialMediaIcons";
@@ -916,88 +935,99 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "WebsiteText WebsiteText WebsiteText WebsiteText WebsiteText"
+    "EcommerceImage EcommerceImage EcommerceText EcommerceText EcommerceText"
     "MoodsText MoodsText MoodsText MoodsSite MoodsSite"
     "UniSite UniSite AwarenessText AwarenessText AwarenessText"
     "AdharText AdharText AdharText AdharSite AdharSite"
     "GHSite GHSite GHText GHText GHText"
     "DegreesText DegreesText DegreesText DegSite DegSite";
+    align-items: center;
+    
   }
   
   .WebsiteDescription {
-    margin: 7vh 0vw;
+    margin: 10vh 0vw;
   }
   .Websites button{
     width: 100%;
     margin: 2vh 0vw
   }
 
-  .WebsiteIframes{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-      
 
+
+
+  .Flipcard {
+    position: relative;
+    width: 98%;
+    height: 90%;
+    margin: 5vh 0vw 5vh 1vw;
+    text-align: center;
+    perspective: 50rem;
+    background-color: white;
+    align-content: center;
+    
   }
+  
   #UniSite, #GHSite{
     margin: 5vh 1vw 5vh 0vw;
+    align-content: center;
   }
 
-
-
-.Flipcard {
-  position: relative;
-  width: 98%;
-  height: 90%;
-  margin: 5vh 0vw 5vh 1vw;
-  text-align: center;
-  perspective: 50rem;
-  background-color: white;
-}
-
-
-.Inner-Flipcard {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-
-.Flipcard:hover .Inner-Flipcard {
-  transform: rotateY(180deg);
-}
-
-
-.Frontcover, .Backcover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-}
-
-
-.Backcover {
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 0;
-  border: 0.3vh solid rgb(32, 32, 32);
-}
-
-.Frontcover img{
-  width: 100%;
-  align-self: center;
-
-}
-
-.Frontcover .Mobile{
-  width: 50%;
-  margin-bottom: 10%;
+  #UniSite img{
+    margin-top: 5vh;
+  }
+  .Inner-Flipcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    align-items: center;
+    justify-content: center;
   
-}
+  }
+  
+  
+  
+  
+  
+  .Frontcover, .Backcover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    align-items: center;
+    align-content: center;
+    
+  }
+  
+  
+  .Backcover {
+    transform: rotateY(180deg);
+    z-index: 0;
+    
+  }
+  
+  .Backcover img{
+    display: inline;
+    height: 100%;
+  }
+  
+  .Frontcover img{
+    width: 100%;
+    align-self: center;
+    align-items: center;
+   
+  
+  }
+  
+  .Frontcover .Mobile{
+    width: 50%;
+    margin-bottom: 10%;
+    
+  }
 
 .SocialMediaImages img{
   width: 23%;
@@ -1038,7 +1068,13 @@ ul li {
       
     }
     
+    .Flipcard:hover .Inner-Flipcard {
+      transform: rotateY(180deg);
+    }
 
+    #UniSite img{
+      margin-top: 0vh;
+    }
     .Frontcover img{
       width: 100%;
       align-self: center;
@@ -1073,10 +1109,23 @@ ul li {
     padding: 8vh 15vw;
   }
 
+
   .Slider {
+    display: grid;
     padding: 10vh 10vw;
+    align-items: center;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-areas:
+      "WelcomeText Links"
+      "IntroText ."
+      "SocialMediaIcons .";
   }
 
+  .SocialMedia .fa{
+    margin-left: 10vw;;
+  }
+
+  
   nav {
     padding: 0vh 10vw;
   }
@@ -1094,7 +1143,15 @@ ul li {
   .nav-links li {
     font-size: 1.5rem;
   }
-
+  .Interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-areas:
+      "InterestsText InterestsText InterestsText"
+      "CoffeeText CoffeeText InterestsCoffee"
+      "TravellingText TravellingText InterestsTravel"
+      "ZeusText ZeusText InterestsZeus";
+  }
   #Title {
     font-size: 3rem;
   }
@@ -1116,6 +1173,7 @@ ul li {
   .WelcomeLinks {
     height: 50%;
     font-size: 1.5vw;
+    margin-left: 10vw;
   }
 
   .AboutMe {
